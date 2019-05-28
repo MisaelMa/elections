@@ -6,7 +6,7 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Get('token')
-  async createToken(): Promise<any> {
+  async signIn(): Promise<any> {
     return await this.authService.signIn();
   }
 

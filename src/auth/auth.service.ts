@@ -8,6 +8,8 @@ export class AuthService {
 
   async signIn() {
     const user: JwtPayload = { email: 'test@email.com' };
+    const expiresIn = 60 * 60;
+    const secretOrKey = 'secret';
     const accessToken = this.jwtService.sign(user);
     return {
       expiresIn: 3600,

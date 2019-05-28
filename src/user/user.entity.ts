@@ -1,6 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, BeforeInsert } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, BeforeInsert, BeforeUpdate } from 'typeorm';
 import { RolEntity } from '../rol/rol.entity';
-import * as crypto from 'crypto';
 @Entity('user')
 export class UserEntity {
 
@@ -25,11 +24,6 @@ export class UserEntity {
     unique: true,
   })
   email: string;
-
-  @BeforeInsert()
-  hashPassword() {
-    this.password = crypto.createHmac('sha256', this.password).digest('hex');
-  }
   @Column()
   password: string;
 
@@ -41,4 +35,5 @@ export class UserEntity {
 
   @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
+
 }

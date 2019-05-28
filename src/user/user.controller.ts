@@ -14,11 +14,14 @@ export class UserController {
   }
   @Post()
   async createProduct(@Res() res, @Body() createUserDTO: CreateUserDTO) {
-    console.log(createUserDTO)
-    const user = await this.userService.createUser(createUserDTO);
-    return res.status(HttpStatus.OK).json({
-      message: 'Product Successfully Created',
-      user,
-    });
+    try {
+      const user = await this.userService.createUser(createUserDTO);
+      return res.status(HttpStatus.OK).json({
+        message: 'Product Successfully Created',
+        user,
+      });
+    } catch (e) {
+      return res.status(HttpStatus.UNAUTHORIZED).json({ message: e.message });
+    }
   }
 }

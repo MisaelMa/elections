@@ -7,7 +7,7 @@ export class CreateUserDTO {
   readonly electorkey: string;
   readonly telephone: string;
   readonly email: string;
-  readonly password: string;
+           password: string;
   readonly confirm_password: string;
   readonly id_rol: RolEntity;
 }
