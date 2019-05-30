@@ -14,6 +14,7 @@ import { VoteModule } from './vote/vote.module';
 import { TypelectionModule } from './typelection/typelection.module';
 import { LocationModule } from './location/location.module';
 import { AuthModule } from './auth/auth.module';
+import { AccesstokensModule } from './accesstokens/accesstokens.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -38,6 +39,7 @@ import { AuthModule } from './auth/auth.module';
     TypelectionModule,
     LocationModule,
     AuthModule,
+    AccesstokensModule,
   ],
   controllers: [AppController],
   providers: [AppService],

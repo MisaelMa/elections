@@ -27,6 +27,9 @@ export class UserEntity {
   @Column()
   password: string;
 
+  @Column({ nullable: true })
+  idRolId: number;
+
   @ManyToOne(type => RolEntity, rol => rol.users)
   id_rol: RolEntity;
 
