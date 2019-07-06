@@ -23,7 +23,7 @@ import { AccesstokensModule } from './accesstokens/accesstokens.module';
     port: 3306,
     username: 'root',
     password: 'marin',
-    database: 'election',
+      database: 'election',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
   }),

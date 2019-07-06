@@ -11,40 +11,39 @@ import { AccesstokensService } from '../accesstokens/accesstokens.service';
 export class AuthService {
   constructor(private readonly usersService: UserService,
               private readonly accesstokensService: AccesstokensService,
-              private readonly jwtService: JwtService) {}
+              private readonly jwtService: JwtService) {
+  }
 
   public async signIn(userAuth: JwtPayload) {
     try {
-    const user: UserInterface = await this.usersService.findOneAuth(userAuth);
-    delete user.address;
-    delete user.telephone;
-    delete user.electorkey;
-    delete user.password;
-    delete user.updatedAt;
-    const data = JSON.stringify(user);
-    const accessToken = this.jwtService.sign({data}, { expiresIn: 3600 });
-    const decodeToken: any | JwtPayloadDecode = this.jwtService.decode(accessToken);
-    const AccesToken: AcTokenDto = {
-         user_id: user.id,
-         name: user.firstname,
-         token: accessToken,
-         revoked: false,
-         createdAt: new Date(),
-         updatedAt: new Date(),
-         expiresAt: decodeToken.exp,
-    };
-    await this.accesstokensService.createAccesToken(AccesToken);
-    return {
-      expiresIn: 3600,
-      accessToken,
-    };
+      const user: UserInterface = await this.usersService.findOneAuth(userAuth);
+      delete user.address;
+      delete user.telephone;
+      delete user.electorkey;
+      delete user.password;
+      const data = JSON.stringify(user);
+      const accessToken = this.jwtService.sign({ data }, { expiresIn: 7200 }); // seconds
+      const decodeToken: any | JwtPayloadDecode = this.jwtService.decode(accessToken);
+      const AccesToken: AcTokenDto = {
+        user_id: user.id,
+        name: user.firstname,
+        token: accessToken,
+        revoked: false,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+        expiresAt: decodeToken.exp,
+      };
+      await this.accesstokensService.createAccesToken(AccesToken);
+      return {
+        accessToken,
+      };
     } catch (e) {
-        return e.message;
+      return e.message;
     }
   }
 
   async validateUser(token: JwtPayload): Promise<any> {
-    return  true;
+    return true;
     // Validate if token passed along with HTTP request
     // is associated with any registered account in the database
     // return await this.usersService.findOneByToken(token);

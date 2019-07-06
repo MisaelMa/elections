@@ -6,5 +6,5 @@ export class AcTokenDto {
   readonly revoked: boolean;
   readonly createdAt: Date;
   readonly updatedAt: Date;
-  readonly expiresAt: Date;
+  readonly expiresAt: string;
 }
