@@ -1,5 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, BeforeInsert, BeforeUpdate } from 'typeorm';
 import { RolEntity } from '../rol/rol.entity';
+import { Role } from '../roles/entities/role.entity';
 @Entity('user')
 export class UserEntity {
 
@@ -32,6 +33,8 @@ export class UserEntity {
 
   @ManyToOne(type => RolEntity, rol => rol.users)
   id_rol: RolEntity;
+  @ManyToOne(() => Role, (role) => role.users)
+  role: Role;
 
   @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;

@@ -15,6 +15,16 @@ import { TypelectionModule } from './typelection/typelection.module';
 import { LocationModule } from './location/location.module';
 import { AuthModule } from './auth/auth.module';
 import { AccesstokensModule } from './accesstokens/accesstokens.module';
+import { TypeOrmCrudService } from '@nestjsx/crud-typeorm';
+import { RoutesModule } from './routes/routes.module';
+import { PermissionsModule } from './permissions/permissions.module';
+import { RolesModule } from './roles/roles.module';
+// @ts-ignore left join only
+// tslint:disable-next-line:only-arrow-functions
+TypeOrmCrudService.prototype.getJoinType = function(s: string) {
+  // tslint:disable-next-line:no-console
+  return 'leftJoin';
+};
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -23,7 +33,7 @@ import { AccesstokensModule } from './accesstokens/accesstokens.module';
     port: 3306,
     username: 'root',
     password: 'marin',
-      database: 'election',
+    database: 'election',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
   }),
@@ -35,6 +45,9 @@ import { AccesstokensModule } from './accesstokens/accesstokens.module';
     RolModule,
     TypepersonModule,
     ElectionModule,
+    RoutesModule,
+    PermissionsModule,
+    RolesModule,
     VoteModule,
     TypelectionModule,
     LocationModule,

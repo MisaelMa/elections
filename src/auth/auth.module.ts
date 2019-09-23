@@ -11,7 +11,7 @@ import { AccesstokensService } from '../accesstokens/accesstokens.service';
   imports: [
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({
-      secretOrPrivateKey: 'secretKey',
+      secret: 'secretKey',
       signOptions: {
         expiresIn: 3600,
       },
