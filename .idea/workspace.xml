@@ -2,196 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/actions.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/actions.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/actions.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/actions.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/actions.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/entities/action.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/DTO/permission.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/entities/permission.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/permissions.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/permissions.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/permissions.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/permissions.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/permissions/permissions.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/roles/entities/role.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/roles/roles.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/roles/roles.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/roles/roles.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/roles/roles.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/entities/route.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/elections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/elections.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elections.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/elections.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/mo/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/nest-cli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/nodemon-debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/nodemon-debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mo/src/app.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mo/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mo/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mo/src/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mo/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mo/test/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/test/jest-e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/tsconfig.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mo/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/mo/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/nest-cli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/nodemon-debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/nodemon-debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/src/app.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/src/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/test/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/test/jest-e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/tsconfig.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduel/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/moduel/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodemon-debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodemon-debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accessTokens.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accessTokens.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accesstokens.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accesstokens.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accesstokens.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accesstokens.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accesstokens.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accesstokens.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accesstokens.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accesstokens.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accesstokens.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accesstokens.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/dto/AcToken.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/dto/AcToken.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/guards/jwt-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/guards/jwt-auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/http.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/http.strategy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/interfaces/JwtPayloadDecode.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/interfaces/JwtPayloadDecode.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/interfaces/jwt-payload.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/interfaces/jwt-payload.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/odt/login.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/odt/login.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rol/rol.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/rol/rol.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeperson/typeperson.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/dto/createUser.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/dto/createUser.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/interface/User.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/interface/User.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.resolver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.resolver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rol/rol.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.controller.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.resolver.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vote/vote.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vote/vote.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/jest-e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -204,14 +25,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+            <state relative-caret-position="441">
+              <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fiscal-information/fiscal-information.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/branch-office/branch-office.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/branch-office/branch-office.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fiscal-information/fiscal-information.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/business/entities/bussiness.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#0#205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/user.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="126" selection-start-column="126" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -228,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes/routes.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="378">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -262,6 +147,7 @@
       <find>class-transformer</find>
       <find>id</find>
       <find>colegiodb</find>
+      <find>RolModule</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -273,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/municipality/municipality.controller.ts" />
-        <option value="$PROJECT_DIR$/src/municipality/municipality.service.ts" />
-        <option value="$PROJECT_DIR$/src/location/location.controller.ts" />
         <option value="$PROJECT_DIR$/src/location/location.entity.ts" />
         <option value="$PROJECT_DIR$/src/section/section.entity.ts" />
         <option value="$PROJECT_DIR$/src/section/section.module.ts" />
@@ -310,11 +193,9 @@
         <option value="$PROJECT_DIR$/src/auth/auth.service.ts" />
         <option value="$PROJECT_DIR$/src/auth/auth.module.ts" />
         <option value="$PROJECT_DIR$/src/main.ts" />
-        <option value="$PROJECT_DIR$/src/user/user.entity.ts" />
         <option value="$PROJECT_DIR$/src/roles/entities/role.entity.ts" />
         <option value="$PROJECT_DIR$/src/routes/routes.module.ts" />
         <option value="$PROJECT_DIR$/src/routes/entities/route.entity.ts" />
-        <option value="$PROJECT_DIR$/src/app.module.ts" />
         <option value="$PROJECT_DIR$/src/roles/roles.service.ts" />
         <option value="$PROJECT_DIR$/src/permissions/permissions.module.ts" />
         <option value="$PROJECT_DIR$/src/permissions/permissions.service.ts" />
@@ -324,14 +205,18 @@
         <option value="$PROJECT_DIR$/src/roles/roles.service.spec.ts" />
         <option value="$PROJECT_DIR$/src/routes/routes.controller.ts" />
         <option value="$PROJECT_DIR$/src/routes/routes.service.ts" />
+        <option value="$PROJECT_DIR$/src/user/user.entity.ts" />
+        <option value="$PROJECT_DIR$/src/fiscal-information/fiscal-information.entity.ts" />
+        <option value="$PROJECT_DIR$/src/business/entities/bussiness.entity.ts" />
+        <option value="$PROJECT_DIR$/src/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/branch-office/branch-office.entity.ts" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
-    <option name="y" value="1" />
     <option name="width" value="1364" />
-    <option name="height" value="721" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -349,6 +234,12 @@
               <item name="elections" type="b2602c69:ProjectViewProjectNode" />
               <item name="elections" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="elections" type="b2602c69:ProjectViewProjectNode" />
+              <item name="elections" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="branch-office" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,18 +315,20 @@
       <workItem from="1563069027818" duration="2815000" />
       <workItem from="1563462409377" duration="81000" />
       <workItem from="1569184110496" duration="4187000" />
-      <workItem from="1569261671303" duration="5406000" />
+      <workItem from="1569261671303" duration="6888000" />
+      <workItem from="1569370413339" duration="131000" />
+      <workItem from="1569370571615" duration="1629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94047000" />
+    <option name="totallyTimeSpent" value="97289000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="10" width="1364" height="721" extended-state="6" />
+    <frame x="-1" y="-1" width="1368" height="734" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2833706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2829486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -450,9 +343,9 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50186425" side_tool="true" weight="0.16608392" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49813572" weight="0.1923077" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49813572" visible="true" weight="0.40308747" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
-      <window_info anchor="bottom" id="Quokka" order="13" />
+      <window_info anchor="bottom" id="Quokka" order="13" weight="0.32933104" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -485,35 +378,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/auth/odt/login.dto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/interfaces/jwt-payload.interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/interfaces/JwtPayloadDecode.interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typeorm/repository/Repository.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/typeperson/typeperson.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -712,16 +576,6 @@
     <entry file="file://$PROJECT_DIR$/src/app.service.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rol/rol.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/permissions/DTO/permission.dto.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -740,16 +594,6 @@
         <state>
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/user.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -824,16 +668,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/roles/roles.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/roles/roles.service.spec.ts" />
     <entry file="file://$PROJECT_DIR$/src/actions/actions.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -857,7 +692,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/routes.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="378">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
@@ -872,12 +707,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/rol/rol.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/user.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="126" selection-start-column="126" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiscal-information/fiscal-information.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/business/entities/bussiness.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#0#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        <state relative-caret-position="441">
+          <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiscal-information/fiscal-information.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/branch-office/branch-office.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/branch-office/branch-office.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

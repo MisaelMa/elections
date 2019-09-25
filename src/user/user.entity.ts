@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, BeforeInsert, BeforeUpdate } from 'typeorm';
-import { RolEntity } from '../rol/rol.entity';
 import { Role } from '../roles/entities/role.entity';
 @Entity('user')
 export class UserEntity {
@@ -28,11 +27,9 @@ export class UserEntity {
   @Column()
   password: string;
 
-  @Column({ nullable: true })
-  idRolId: number;
+  // @Column({ nullable: true })
+  // idRolId: number;
 
-  @ManyToOne(type => RolEntity, rol => rol.users)
-  id_rol: RolEntity;
   @ManyToOne(() => Role, (role) => role.users)
   role: Role;
 

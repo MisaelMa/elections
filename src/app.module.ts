@@ -7,7 +7,6 @@ import { StateModule } from './state/state.module';
 import { MunicipalityModule } from './municipality/municipality.module';
 import { SectionModule } from './section/section.module';
 import { UserModule } from './user/user.module';
-import { RolModule } from './rol/rol.module';
 import { TypepersonModule } from './typeperson/typeperson.module';
 import { ElectionModule } from './election/election.module';
 import { VoteModule } from './vote/vote.module';
@@ -19,6 +18,9 @@ import { TypeOrmCrudService } from '@nestjsx/crud-typeorm';
 import { RoutesModule } from './routes/routes.module';
 import { PermissionsModule } from './permissions/permissions.module';
 import { RolesModule } from './roles/roles.module';
+import { BusinessModule } from './business/business.module';
+import { FiscalInformationModule } from './fiscal-information/fiscal-information.module';
+import { BranchOfficeModule } from './branch-office/branch-office.module';
 // @ts-ignore left join only
 // tslint:disable-next-line:only-arrow-functions
 TypeOrmCrudService.prototype.getJoinType = function(s: string) {
@@ -42,7 +44,6 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     MunicipalityModule,
     SectionModule,
     UserModule,
-    RolModule,
     TypepersonModule,
     ElectionModule,
     RoutesModule,
@@ -53,6 +54,9 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     LocationModule,
     AuthModule,
     AccesstokensModule,
+    BusinessModule,
+    FiscalInformationModule,
+    BranchOfficeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
