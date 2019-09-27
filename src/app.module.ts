@@ -21,6 +21,7 @@ import { RolesModule } from './roles/roles.module';
 import { BusinessModule } from './business/business.module';
 import { FiscalInformationModule } from './fiscal-information/fiscal-information.module';
 import { BranchOfficeModule } from './branch-office/branch-office.module';
+import { CustomerModule } from './customer/customer.module';
 // @ts-ignore left join only
 // tslint:disable-next-line:only-arrow-functions
 TypeOrmCrudService.prototype.getJoinType = function(s: string) {
@@ -57,6 +58,7 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     BusinessModule,
     FiscalInformationModule,
     BranchOfficeModule,
+    CustomerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
