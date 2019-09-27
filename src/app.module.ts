@@ -36,7 +36,7 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     port: 3306,
     username: 'root',
     password: 'marin',
-    database: 'election',
+    database: 'agenda',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
   }),

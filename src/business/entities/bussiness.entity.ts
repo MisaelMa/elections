@@ -19,7 +19,6 @@ export class Bussiness {
 
   @PrimaryGeneratedColumn({
     type: 'int',
-    name: 'id',
   })
   id: number;
 
@@ -49,7 +48,18 @@ export class Bussiness {
   @Column('varchar', {
     nullable: false,
   })
-  country: number;
+  countryid: number;
+
+  @Column('int', {
+    nullable: false,
+  })
+  cityid: number;
+
+  @Column('varchar', {
+    nullable: false,
+    length: 1000,
+  })
+  logo: string;
 
   @Column('varchar', {
     nullable: false,
