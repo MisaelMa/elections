@@ -22,6 +22,8 @@ import { BusinessModule } from './business/business.module';
 import { FiscalInformationModule } from './fiscal-information/fiscal-information.module';
 import { BranchOfficeModule } from './branch-office/branch-office.module';
 import { CustomerModule } from './customer/customer.module';
+import { ConfigModule } from './config/config.module';
+import { AgendadbService } from './database/agendadb.service';
 // @ts-ignore left join only
 // tslint:disable-next-line:only-arrow-functions
 TypeOrmCrudService.prototype.getJoinType = function(s: string) {
@@ -30,16 +32,11 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
 };
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-    type: 'mysql',
-    host: 'localhost',
-    port: 3306,
-    username: 'root',
-    password: 'marin',
-    database: 'agenda',
-    entities: [__dirname + '/**/*.entity{.ts,.js}'],
-    synchronize: true,
-  }),
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      // name: 'colegiodb',
+      useClass: AgendadbService,
+    }),
     CountryModule,
     StateModule,
     MunicipalityModule,
@@ -59,6 +56,7 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     FiscalInformationModule,
     BranchOfficeModule,
     CustomerModule,
+    ConfigModule,
   ],
   controllers: [AppController],
   providers: [AppService],

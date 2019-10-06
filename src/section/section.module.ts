@@ -10,4 +10,5 @@ import { SectionEntity } from './section.entity';
   providers: [SectionService, SectionResolver],
   controllers: [SectionController],
 })
-export class SectionModule {}
+export class SectionModule {
+}
