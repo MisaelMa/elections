@@ -9,11 +9,12 @@ const processEnv: any = dotenv.parse(fs.readFileSync(`${environment}.env`));
 // ...
 // Check typeORM documentation for more information.
 console.log(`Migración corriendo --> en entorno ${process.env.NODE_ENV }`);
-console.log(`Migración corriendo --> en la base de datos ${processEnv.DB_DBNAME_COLEGIO_INGLES}`);
+console.log(`Migración corriendo --> en la base de datos ${processEnv.DB_DBNAME}`);
+
 
 const config: ConnectionOptions = {
   type: 'mysql',
-  name: 'colegiodb',
+  // name: 'colegiodb',
   migrationsTableName: 'migrations_typeorm',
   host: processEnv.DB_HOST,
   port: processEnv.DB_PORT,
@@ -21,7 +22,9 @@ const config: ConnectionOptions = {
   password: processEnv.DB_PASSWORD,
   database: processEnv.DB_DBNAME,
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-
+  // @ts-ignore
+  seeds: [ '/**/*.seed{.ts,.js}'],
+  factories: ['/**/*.factory{.ts,.js}'],
   // We are using migrations, synchronize should be set to false.
   synchronize: false,
 

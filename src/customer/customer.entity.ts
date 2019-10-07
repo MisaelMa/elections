@@ -80,7 +80,7 @@ export class CustomerEntity {
   @Column('date', {
     nullable: true,
   })
-  birthdate: string | null;
+  birthdate: Date | null;
 
   @Column('varchar', {
     nullable: false,

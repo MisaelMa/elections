@@ -14,9 +14,7 @@ export class UserService {
     @InjectRepository(UserEntity) private readonly userRepository: Repository<UserEntity>,
   ) {}
   public async findAll(): Promise<UserInterface[]> {
-    return await  this.userRepository.find({
-      relations: ['id_rol'],
-    });
+    return await  this.userRepository.find();
   }
   public async findOneAuth(loginDTO: JwtPayload): Promise<UserInterface> {
     const user: any = await  this.userRepository.findOne({ where: { email: loginDTO.email } });

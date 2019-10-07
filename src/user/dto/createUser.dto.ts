@@ -1,4 +1,4 @@
-import { RolEntity } from '../../rol/rol.entity';
+// import { RolEntity } from '../../rol/rol.entity';
 
 export class CreateUserDTO {
   readonly firstname: string;
@@ -9,5 +9,5 @@ export class CreateUserDTO {
   readonly email: string;
            password: string;
   readonly confirm_password: string;
-  readonly id_rol: RolEntity;
+  // readonly id_rol: RolEntity;
 }

@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
-import { MunicipalityEntity } from 'src/municipality/municipality.entity';
+import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { SectionEntity } from '../section/section.entity';
 
 @Entity('location')

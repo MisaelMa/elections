@@ -8,5 +8,6 @@ import { AccessTokensEntity } from './accessTokens.entity';
   imports: [TypeOrmModule.forFeature([AccessTokensEntity])],
   providers: [AccesstokensService],
   controllers: [AccesstokensController],
+  exports:[AccesstokensService],
 })
 export class AccesstokensModule {}

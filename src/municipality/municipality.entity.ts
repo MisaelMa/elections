@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 import { StateEntity } from '../state/state.entity';
-import { LocationEntity } from 'src/location/location.entity';
+import { LocationEntity } from '../location/location.entity';
 
 @Entity('municipality')
 export class MunicipalityEntity {

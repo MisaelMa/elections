@@ -1,4 +1,4 @@
-import { RolEntity } from '../../rol/rol.entity';
+// import { RolEntity } from '../../roles/roles.entity';
 
 export interface UserInterface {
    id: number;
@@ -10,5 +10,5 @@ export interface UserInterface {
    email: string;
    password: string;
    updatedAt: Date;
-   id_rol: RolEntity;
+   // id_rol?: RolEntity;
 }
