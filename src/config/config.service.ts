@@ -83,7 +83,7 @@ export class ConfigService {
    * @return boolean
    */
   get isSynchronizeDBEnabled(): boolean {
-    return Boolean(this.envConfig.DB_SYNCHRONIZE_COLEGIO_INGLES);
+    return Boolean(this.envConfig.DB_SYNCHRONIZE);
   }
 
   /**
