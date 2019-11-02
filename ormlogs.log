@@ -1,0 +1,21 @@
+[2019-11-02T02:02:03.000Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agenda' AND `TABLE_NAME` = 'migrations_typeorm'
+[2019-11-02T02:02:03.005Z][QUERY]: SELECT * FROM `agenda`.`migrations_typeorm` `migrations_typeorm`
+[2019-11-02T02:02:03.006Z]0 migrations are already loaded in the database.
+[2019-11-02T02:02:03.006Z]1 migrations were found in the source code.
+[2019-11-02T02:02:03.006Z]1 migrations are new migrations that needs to be executed.
+[2019-11-02T02:02:03.006Z][QUERY]: START TRANSACTION
+[2019-11-02T02:02:03.007Z][QUERY]: ALTER TABLE `customer` ADD `DaTa` varchar(250) NOT NULL
+[2019-11-02T02:02:03.039Z][QUERY]: INSERT INTO `agenda`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1572660074989,"amir1572660074989"]
+[2019-11-02T02:02:03.043Z]Migration amir1572660074989 has been executed successfully.
+[2019-11-02T02:02:03.043Z][QUERY]: COMMIT
+[2019-11-02T02:02:40.731Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agenda' AND `TABLE_NAME` = 'migrations_typeorm'
+[2019-11-02T02:02:40.735Z][QUERY]: SELECT * FROM `agenda`.`migrations_typeorm` `migrations_typeorm`
+[2019-11-02T02:02:40.736Z]1 migrations are already loaded in the database.
+[2019-11-02T02:02:40.736Z]2 migrations were found in the source code.
+[2019-11-02T02:02:40.737Z]amir1572660074989 is the last executed migration. It was executed on Fri Nov 01 2019 21:01:14 GMT-0500 (GMT-05:00).
+[2019-11-02T02:02:40.737Z]1 migrations are new migrations that needs to be executed.
+[2019-11-02T02:02:40.737Z][QUERY]: START TRANSACTION
+[2019-11-02T02:02:40.738Z][QUERY]: ALTER TABLE `customer` DROP COLUMN `DaTa`
+[2019-11-02T02:02:40.928Z][QUERY]: INSERT INTO `agenda`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1572660155525,"removeData1572660155525"]
+[2019-11-02T02:02:40.933Z]Migration removeData1572660155525 has been executed successfully.
+[2019-11-02T02:02:40.933Z][QUERY]: COMMIT

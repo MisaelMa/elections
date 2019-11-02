@@ -4,9 +4,8 @@
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/development.env" beforeDir="false" afterPath="$PROJECT_DIR$/development.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factories/Customer.factory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/Customer.factory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ormconfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ormconfig.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,27 +20,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>accessToken</find>
-      <find>local</find>
-      <find>class-transformer</find>
-      <find>id</find>
-      <find>colegiodb</find>
-      <find>RolModule</find>
-      <find>SectionE</find>
-      <find>rol.e</find>
-      <find>rol</find>
-      <find>user</find>
-      <find>SectionEntity</find>
-      <find>src/location/location.entity'</find>
-      <find>src/municipality/municipality.entity</find>
-      <find>time</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/seeds" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../proyectos/nest/colegio-api-core" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,7 +39,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,6 +103,7 @@
       <workItem from="1570495936885" duration="1576000" />
       <workItem from="1570831053170" duration="5617000" />
       <workItem from="1572268771953" duration="96000" />
+      <workItem from="1572652753571" duration="6532000" />
     </task>
     <servers />
   </component>
@@ -136,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

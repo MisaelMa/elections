@@ -11,7 +11,6 @@ const processEnv: any = dotenv.parse(fs.readFileSync(`${environment}.env`));
 console.log(`Migración corriendo --> en entorno ${process.env.NODE_ENV }`);
 console.log(`Migración corriendo --> en la base de datos ${processEnv.DB_DBNAME}`);
 
-
 const config: ConnectionOptions = {
   type: 'mysql',
   // name: 'colegiodb',
@@ -30,10 +29,9 @@ const config: ConnectionOptions = {
 
   // Run migrations automatically,
   // you can disable this if you prefer running migration manually.
-  migrationsRun: false,
-  logging: 'all',
-  logger: 'simple-console',
-
+  migrationsRun: true,
+  logging: true,
+  logger: 'file',
   // Allow both start:prod and start:dev to use migrations
   // __dirname is either dist or src folder, meaning either
   // the compiled js in prod or the ts in dev.
