@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/development.env" beforeDir="false" afterPath="$PROJECT_DIR$/development.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ormconfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ormconfig.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../proyectos/nest/colegio-api-core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../vue/agend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -39,7 +38,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -103,7 +102,17 @@
       <workItem from="1570495936885" duration="1576000" />
       <workItem from="1570831053170" duration="5617000" />
       <workItem from="1572268771953" duration="96000" />
-      <workItem from="1572652753571" duration="6532000" />
+      <workItem from="1572652753571" duration="6924000" />
+      <workItem from="1572873756085" duration="123000" />
+      <workItem from="1572966473370" duration="3156000" />
+      <workItem from="1572976557876" duration="199000" />
+      <workItem from="1572976962738" duration="335000" />
+      <workItem from="1572977334445" duration="506000" />
+      <workItem from="1573338805967" duration="1473000" />
+      <workItem from="1573341207218" duration="636000" />
+      <workItem from="1573341877647" duration="150000" />
+      <workItem from="1573350955425" duration="2823000" />
+      <workItem from="1573478168274" duration="168000" />
     </task>
     <servers />
   </component>
