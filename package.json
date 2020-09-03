@@ -31,7 +31,7 @@
     "typeorm:run:test": "npm run typeorm:test migration:run"
   },
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^19.1.1",
     "@nestjs/common": "^6.9.0",
     "@nestjs/core": "^6.9.0",
     "@nestjs/graphql": "^6.5.3",
