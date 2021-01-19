@@ -1,11 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller } from '@nestjs/common';
 import { LocationService } from './location.service';
+import { Crud, CrudController } from '@nestjsx/crud';
+import { LocationEntity } from './location.entity';
 
-@Controller('location')
-export class LocationController {
-  constructor(private readonly locationService: LocationService) {}
-  @Get()
-  async findAll() {
-    return await this.locationService.findAll();
+@Crud({
+  model: {
+    type: LocationEntity,
+  },
+})
+@Controller('municipality/location')
+export class LocationController implements CrudController<LocationEntity> {
+  constructor(public service: LocationService) {
   }
+
 }

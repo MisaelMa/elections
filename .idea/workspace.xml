@@ -3,42 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accesstokens/accessTokens.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accessTokens.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/entities/action.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/entities/action.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/branch-office/branch-office.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/branch-office/branch-office.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/entities/bussiness.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/entities/bussiness.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/country/country.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/agendadb.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/agendadb.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/election/election.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fiscal-information/fiscal-information.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/fiscal-information/fiscal-information.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/permissions/entities/permission.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/permissions/entities/permission.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roles/entities/role.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/entities/role.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/entities/route.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/entities/route.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.resolver.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serving/serving.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/state.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.entity.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.resolver.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.resolver.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeperson/typeperson.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/location/location.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/location/location.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/location/location.resolver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/location/location.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/location/location.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +50,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -145,7 +115,8 @@
       <workItem from="1573341877647" duration="150000" />
       <workItem from="1573350955425" duration="2823000" />
       <workItem from="1573478168274" duration="168000" />
-      <workItem from="1611080900756" duration="1292000" />
+      <workItem from="1611080900756" duration="2883000" />
+      <workItem from="1611089440191" duration="1652000" />
     </task>
     <servers />
   </component>

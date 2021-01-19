@@ -1,17 +1,15 @@
 import { Injectable } from '@nestjs/common';
-import { MunicipalityEntity } from '../municipality/municipality.entity';
-import { Repository } from 'typeorm';
 import { LocationEntity } from './location.entity';
 import { InjectRepository } from '@nestjs/typeorm';
+import { TypeOrmCrudService } from '@nestjsx/crud-typeorm';
 
 @Injectable()
-export class LocationService {
-  constructor(
-    @InjectRepository(LocationEntity) private readonly locationRepository: Repository<LocationEntity>,
-  ) {}
+export class LocationService extends TypeOrmCrudService<LocationEntity> {
+  constructor(@InjectRepository(LocationEntity) repo) {
+    super(repo);
+  }
+
   async findAll(): Promise<LocationEntity[]> {
-    return await this.locationRepository.find({
-      relations: ['sections'],
-    });
+    return [];
   }
 }
