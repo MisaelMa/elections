@@ -23,13 +23,13 @@ export class Role {
     @OneToMany(() => Permission, (permission) => permission.role)
     permissions: Permission[];
 
-    @Column('timestamp', {
+    @Column('date', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
     })
     createdAt: Date;
 
-    @Column('timestamp', {
+    @Column('date', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
         onUpdate: 'CURRENT_TIMESTAMP',

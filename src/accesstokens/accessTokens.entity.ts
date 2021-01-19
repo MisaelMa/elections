@@ -11,16 +11,16 @@ export class AccessTokensEntity {
   @Column()
   name: string;
 
-  @Column('longtext')
+  @Column('text')
   token: string;
 
   @Column()
   revoked: boolean;
 
-  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
+  @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
+  @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 
   @Column()

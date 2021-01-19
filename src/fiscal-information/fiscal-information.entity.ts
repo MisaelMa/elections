@@ -91,13 +91,13 @@ export class FiscalInformationEntity {
   })
   logo: string; // pais
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
   })
   createdAt: Date;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
   })

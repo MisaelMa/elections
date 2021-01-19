@@ -68,13 +68,13 @@ export class Bussiness {
   })
   correo: string;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
   })
   createdAt: Date;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
   })

@@ -23,9 +23,9 @@ export class StateEntity {
   @OneToMany(type => MunicipalityEntity, municipality => municipality.id_state)
   municipalitys: Promise<MunicipalityEntity[]>;
 
-  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
+  @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
+  @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 }

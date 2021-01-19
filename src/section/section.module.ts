@@ -4,6 +4,7 @@ import { SectionResolver } from './section.resolver';
 import { SectionController } from './section.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { SectionEntity } from './section.entity';
+import { ColegioDBNameConnection } from 'src/database/agendadb.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([SectionEntity])],

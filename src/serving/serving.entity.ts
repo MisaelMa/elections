@@ -63,14 +63,14 @@ export class ServingEntity {
   })
   isActive: number;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
     name: 'createdAt',
   })
   createdAt: Date;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
     name: 'updatedAt',

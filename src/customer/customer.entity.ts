@@ -93,13 +93,13 @@ export class CustomerEntity {
   })
   profilePicture: string | null;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
   })
   createdAt: Date;
 
-  @Column('timestamp', {
+  @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
     onUpdate: 'CURRENT_TIMESTAMP',

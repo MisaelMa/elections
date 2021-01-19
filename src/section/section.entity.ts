@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { LocationEntity } from '../location/location.entity';
 
@@ -13,9 +13,10 @@ export class SectionEntity {
 
   @ManyToOne(type => LocationEntity, location => location.sections)
   id_location: MunicipalityEntity;
-  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
+
+  @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
+  @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 }

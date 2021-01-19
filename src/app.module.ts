@@ -7,7 +7,6 @@ import { StateModule } from './state/state.module';
 import { MunicipalityModule } from './municipality/municipality.module';
 import { SectionModule } from './section/section.module';
 import { UserModule } from './user/user.module';
-import { TypepersonModule } from './typeperson/typeperson.module';
 import { ElectionModule } from './election/election.module';
 import { VoteModule } from './vote/vote.module';
 import { TypelectionModule } from './typelection/typelection.module';
@@ -23,7 +22,7 @@ import { FiscalInformationModule } from './fiscal-information/fiscal-information
 import { BranchOfficeModule } from './branch-office/branch-office.module';
 import { CustomerModule } from './customer/customer.module';
 import { ConfigModule } from './config/config.module';
-import { AgendadbService } from './database/agendadb.service';
+import { AgendadbService, ColegioDBNameConnection } from './database/agendadb.service';
 import { ServingModule } from './serving/serving.module';
 // @ts-ignore left join only
 // tslint:disable-next-line:only-arrow-functions
@@ -35,7 +34,6 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
   imports: [
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
-      // name: 'colegiodb',
       useClass: AgendadbService,
     }),
     CountryModule,
@@ -43,7 +41,6 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     MunicipalityModule,
     SectionModule,
     UserModule,
-    TypepersonModule,
     ElectionModule,
     RoutesModule,
     PermissionsModule,
