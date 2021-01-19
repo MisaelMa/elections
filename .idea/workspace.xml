@@ -4,11 +4,20 @@
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.resolver.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serving/serving.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serving/serving.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serving/serving.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serving/serving.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serving/serving.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serving/serving.service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +125,8 @@
       <workItem from="1573350955425" duration="2823000" />
       <workItem from="1573478168274" duration="168000" />
       <workItem from="1611080900756" duration="2883000" />
-      <workItem from="1611089440191" duration="1652000" />
+      <workItem from="1611089440191" duration="1940000" />
+      <workItem from="1611094263353" duration="1440000" />
     </task>
     <servers />
   </component>

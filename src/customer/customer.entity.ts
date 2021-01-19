@@ -1,18 +1,4 @@
-import {
-  BaseEntity,
-  Column,
-  Entity,
-  Index,
-  JoinColumn,
-  JoinTable,
-  ManyToMany,
-  ManyToOne,
-  OneToMany,
-  OneToOne,
-  PrimaryColumn,
-  PrimaryGeneratedColumn,
-  RelationId,
-} from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('customer')
 export class CustomerEntity {
@@ -37,61 +23,20 @@ export class CustomerEntity {
   })
   lastNameMother: string | null;
 
-  @Column('tinyint', {
-    nullable: false,
-  })
-  isActive: number;
-
   @Column('varchar', {
-    nullable: false,
-    length: 150,
-  })
-  email: string;
-
-  @Column('varchar', {
-    nullable: false,
-    length: 50,
-  })
-  phone: string;
-
-  @Column('int', {
     nullable: true,
   })
-  age: number | null;
+  clave: string | null;
 
   @Column('varchar', {
     nullable: true,
-    length: 10,
   })
-  gender: string | null;
+  phone: string | null;
 
   @Column('varchar', {
     nullable: true,
-    length: 200,
   })
-  address: string | null;
-
-  @Column('varchar', {
-    nullable: true,
-    length: 10,
-  })
-  bloodType: string | null;
-
-  @Column('date', {
-    nullable: true,
-  })
-  birthdate: Date | null;
-
-  @Column('varchar', {
-    nullable: false,
-    length: 250,
-  })
-  searchName: string;
-
-  @Column('text', {
-    nullable: true,
-  })
-  profilePicture: string | null;
+  direccion: string | null;
 
   @Column('date', {
     nullable: false,

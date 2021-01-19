@@ -22,8 +22,7 @@ import { FiscalInformationModule } from './fiscal-information/fiscal-information
 import { BranchOfficeModule } from './branch-office/branch-office.module';
 import { CustomerModule } from './customer/customer.module';
 import { ConfigModule } from './config/config.module';
-import { AgendadbService, ColegioDBNameConnection } from './database/agendadb.service';
-import { ServingModule } from './serving/serving.module';
+import { AgendadbService } from './database/agendadb.service';
 // @ts-ignore left join only
 // tslint:disable-next-line:only-arrow-functions
 TypeOrmCrudService.prototype.getJoinType = function(s: string) {
@@ -55,7 +54,6 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     BranchOfficeModule,
     CustomerModule,
     ConfigModule,
-    ServingModule,
   ],
   controllers: [AppController],
   providers: [AppService],
