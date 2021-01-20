@@ -4,20 +4,27 @@
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.entity.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serving/serving.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/guards/jwt-auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/http.strategy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/interfaces/JwtPayloadDecode.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/interfaces/jwt-payload.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/odt/login.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/Serving.factory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.resolver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.resolver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.service.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,9 +71,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/user" />
       <recent name="$PROJECT_DIR$/src/seeds" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/auth/odt" />
@@ -126,7 +134,10 @@
       <workItem from="1573478168274" duration="168000" />
       <workItem from="1611080900756" duration="2883000" />
       <workItem from="1611089440191" duration="1940000" />
-      <workItem from="1611094263353" duration="1440000" />
+      <workItem from="1611094263353" duration="1864000" />
+      <workItem from="1611097738192" duration="607000" />
+      <workItem from="1611148191675" duration="2244000" />
+      <workItem from="1611150772020" duration="1179000" />
     </task>
     <servers />
   </component>

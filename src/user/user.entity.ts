@@ -1,5 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, BeforeInsert, BeforeUpdate } from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Role } from '../roles/entities/role.entity';
+
 @Entity('user')
 export class UserEntity {
 
@@ -11,19 +12,12 @@ export class UserEntity {
 
   @Column()
   lastname: string;
-  @Column()
-  address: string;
-
-  @Column()
-  electorkey: string;
-
-  @Column()
-  telephone: string;
 
   @Column({
     unique: true,
   })
   email: string;
+
   @Column()
   password: string;
 
