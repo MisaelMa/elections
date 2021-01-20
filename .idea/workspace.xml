@@ -3,28 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/guards/jwt-auth.guard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/http.strategy.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/interfaces/JwtPayloadDecode.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/interfaces/jwt-payload.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/odt/login.dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factories/Serving.factory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.resolver.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.resolver.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.resolver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/municipality/municipality.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/municipality/municipality.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/section/section.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.resolver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/state.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/state.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +129,7 @@
       <workItem from="1611097738192" duration="607000" />
       <workItem from="1611148191675" duration="2244000" />
       <workItem from="1611150772020" duration="1179000" />
+      <workItem from="1611154955193" duration="1217000" />
     </task>
     <servers />
   </component>

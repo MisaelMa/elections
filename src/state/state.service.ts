@@ -1,15 +1,16 @@
 import { Injectable } from '@nestjs/common';
-import { Repository } from 'typeorm';
 import { StateEntity } from './state.entity';
 import { InjectRepository } from '@nestjs/typeorm';
+import { TypeOrmCrudService } from '@nestjsx/crud-typeorm';
 
 @Injectable()
-export class StateService {
-  constructor(
-    @InjectRepository(StateEntity) private readonly stateRepository: Repository<StateEntity>,
-  ) {}
+export class StateService extends TypeOrmCrudService<StateEntity> {
+  constructor(@InjectRepository(StateEntity) repo) {
+    super(repo);
+  }
+
   async findAll(): Promise<StateEntity[]> {
-    return await this.stateRepository.find({
+    return await this.repo.find({
       relations: ['municipalitys', 'municipalitys.locations'],
     });
   }

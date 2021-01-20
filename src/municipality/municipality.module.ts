@@ -9,5 +9,6 @@ import { MunicipalityEntity } from './municipality.entity';
   imports: [TypeOrmModule.forFeature([MunicipalityEntity])],
   providers: [MunicipalityService, MunicipalityResolver],
   controllers: [MunicipalityController],
+  exports: [MunicipalityService],
 })
 export class MunicipalityModule {}
