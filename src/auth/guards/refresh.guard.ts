@@ -1,9 +1,5 @@
 import { ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import {} from 'passport-jwt';
-import { PayloadToken } from '../../../common/types/jwt';
-import { getAction, getFeature } from '@nestjsx/crud';
-import { AuthAccessTokensService } from '../../auth-access-tokens/auth-access-tokens.service';
 
 @Injectable()
 export class RefreshGuard extends AuthGuard('jwt') {
