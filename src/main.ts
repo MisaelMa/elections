@@ -13,8 +13,6 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
-  await app.listen(4000, () => {
-    console.log('api funcionando en el puerto 4000');
-  });
+  await app.listen(process.env.PORT || 8080);
 }
 bootstrap();

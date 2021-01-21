@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/guards/refresh.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/guards/refresh.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factories/Customer.factory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeds/CreateCustomer.seed.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seeds/CreateServing.seed.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/users.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +119,7 @@
       <workItem from="1611148191675" duration="2244000" />
       <workItem from="1611150772020" duration="1179000" />
       <workItem from="1611154955193" duration="1813000" />
-      <workItem from="1611182160258" duration="2316000" />
+      <workItem from="1611182160258" duration="3174000" />
     </task>
     <servers />
   </component>

@@ -29,6 +29,9 @@
     "typeorm:migrate:test": "npm run typeorm:test migration:generate -- -n",
     "typeorm:run:test": "npm run typeorm:test migration:run"
   },
+  "engines": {
+    "node": "14.15.1"
+  },
   "dependencies": {
     "@hapi/hapi": "^18.4.1",
     "@nestjs/common": "^6.11.11",
