@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/country/country.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +122,8 @@
       <workItem from="1611154955193" duration="1813000" />
       <workItem from="1611182160258" duration="5141000" />
       <workItem from="1611277565076" duration="609000" />
-      <workItem from="1611322379626" duration="2073000" />
+      <workItem from="1611322379626" duration="2857000" />
+      <workItem from="1611326273037" duration="1451000" />
     </task>
     <servers />
   </component>

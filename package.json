@@ -10,7 +10,7 @@
     "start": "cross-env NODE_ENV=development ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "cross-env NODE_ENV=development tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
     "start:debug": "cross-env NODE_ENV=development tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
-    "start:prod": "node dist/main.js",
+    "start:prod": "cross-env NODE_ENV=production node dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -68,6 +68,7 @@
     "rxjs": "^6.6.3",
     "sqlite3": "^5.0.1",
     "swagger-ui-express": "^4.1.6",
+    "tsc-watch": "^4.2.9",
     "typeorm": "^0.2.30",
     "typeorm-seeding": "^1.6.1"
   },
