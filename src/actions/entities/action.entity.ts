@@ -14,13 +14,13 @@ export class Action {
     })
     name: string;
 
-    @Column('date', {
+    @Column('timestamp', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
     })
     createdAt: Date;
 
-    @Column('date', {
+    @Column('timestamp', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
         onUpdate: 'CURRENT_TIMESTAMP',

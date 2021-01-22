@@ -12,12 +12,12 @@ export class Permission {
     @Column('int', { nullable: true })
     routeId: number;
 
-    @Column('date', {
+    @Column('timestamp', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
     })
     createdAt: Date;
-    @Column('date', {
+    @Column('timestamp', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
         onUpdate: 'CURRENT_TIMESTAMP',

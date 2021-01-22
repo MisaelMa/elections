@@ -52,13 +52,13 @@ export class CustomerEntity {
   })
   peopleId: number | null;
 
-  @Column('date', {
+  @Column('timestamp', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
   })
   createdAt: Date;
 
-  @Column('date', {
+  @Column('timestamp', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
     onUpdate: 'CURRENT_TIMESTAMP',

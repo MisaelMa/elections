@@ -15,9 +15,9 @@ export class ElectionEntity {
   @Column()
   active: Date;
 
-  @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
+  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
+  @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 }
