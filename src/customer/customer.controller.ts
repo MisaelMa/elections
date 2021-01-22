@@ -11,6 +11,7 @@ import { CustomerService } from './customer.service';
     join: {
       section: {},
       zona: {},
+      user: {},
     },
   },
 })

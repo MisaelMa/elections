@@ -7,6 +7,13 @@ import { LocationEntity } from './location.entity';
   model: {
     type: LocationEntity,
   },
+  query: {
+    join: {
+      muncipality: {},
+      sections: {},
+      people: {},
+    },
+  },
 })
 @Controller('municipality/location')
 export class LocationController implements CrudController<LocationEntity> {

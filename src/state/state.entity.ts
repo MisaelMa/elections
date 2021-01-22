@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, OneToMany, ManyToOne } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { CountryEntity } from '../country/country.entity';
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 
@@ -17,11 +17,15 @@ export class StateEntity {
   @Column()
   cod_tel: string;
 
-  @ManyToOne(type => CountryEntity, country => country.states)
-  id_country: CountryEntity;
+  @ManyToOne(type => CountryEntity, country => country.states, {
+    cascade: ['insert'],
+  })
+  country: CountryEntity;
 
-  @OneToMany(type => MunicipalityEntity, municipality => municipality.id_state)
-  municipalitys: Promise<MunicipalityEntity[]>;
+  @OneToMany(type => MunicipalityEntity, municipality => municipality.state, {
+    cascade: ['insert'],
+  })
+  municipalitys: MunicipalityEntity[];
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;

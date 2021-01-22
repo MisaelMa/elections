@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { SectionEntity } from '../section/section.entity';
 import { CustomerEntity } from '../customer/customer.entity';
@@ -15,11 +15,15 @@ export class LocationEntity {
   @Column()
   name: string;
 
-  @ManyToOne(type => MunicipalityEntity, municipality => municipality.locations)
-  id_muncipality: MunicipalityEntity;
+  @ManyToOne(type => MunicipalityEntity, municipality => municipality.locations, {
+    cascade: ['insert'],
+  })
+  muncipality: MunicipalityEntity;
 
-  @OneToMany(type => SectionEntity, section => section.id_location)
-  sections: Promise<SectionEntity[]>;
+  @OneToMany(type => SectionEntity, section => section.location, {
+    cascade: ['insert'],
+  })
+  sections: SectionEntity[];
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
@@ -27,6 +31,8 @@ export class LocationEntity {
   @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 
-  @OneToMany(type => CustomerEntity, people => people.zona)
+  @OneToMany(type => CustomerEntity, people => people.zona, {
+    cascade: ['insert'],
+  })
   people: CustomerEntity[];
 }

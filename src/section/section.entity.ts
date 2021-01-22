@@ -12,8 +12,10 @@ export class SectionEntity {
   @Column()
   name: string;
 
-  @ManyToOne(type => LocationEntity, location => location.sections)
-  id_location: MunicipalityEntity;
+  @ManyToOne(type => LocationEntity, location => location.sections, {
+    cascade: ['insert'],
+  })
+  location: MunicipalityEntity;
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;

@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { StateEntity } from '../state/state.entity';
 import { LocationEntity } from '../location/location.entity';
 
@@ -14,11 +14,15 @@ export class MunicipalityEntity {
   @Column()
   name: string;
 
-  @ManyToOne(type => StateEntity, state => state.municipalitys)
-  id_state: StateEntity;
+  @ManyToOne(type => StateEntity, state => state.municipalitys, {
+    cascade: ['insert'],
+  })
+  state: StateEntity;
 
-  @OneToMany(type => LocationEntity, location => location.id_muncipality)
-  locations: Promise<LocationEntity[]>;
+  @OneToMany(type => LocationEntity, location => location.muncipality, {
+    cascade: ['insert'],
+  })
+  locations: LocationEntity[];
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;

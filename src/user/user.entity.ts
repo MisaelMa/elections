@@ -1,5 +1,7 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Role } from '../roles/entities/role.entity';
+import { LocationEntity } from '../location/location.entity';
+import { CustomerEntity } from '../customer/customer.entity';
 
 @Entity('user')
 export class UserEntity {
@@ -24,7 +26,9 @@ export class UserEntity {
   // @Column({ nullable: true })
   // idRolId: number;
 
-  @ManyToOne(() => Role, (role) => role.users)
+  @ManyToOne(() => Role, (role) => role.users, {
+    cascade: ['insert'],
+  })
   role: Role;
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
@@ -33,4 +37,9 @@ export class UserEntity {
   @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 
+  @OneToOne(type => CustomerEntity, state => state.user, {
+    cascade: ['insert'],
+  })
+  @JoinColumn()
+  people: LocationEntity;
 }

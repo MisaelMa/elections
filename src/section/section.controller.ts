@@ -7,6 +7,12 @@ import { Crud, CrudController } from '@nestjsx/crud';
   model: {
     type: SectionEntity,
   },
+  query: {
+    join: {
+      location: {},
+      people: {},
+    },
+  },
 })
 @Controller('section')
 export class SectionController implements CrudController<SectionEntity> {

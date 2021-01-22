@@ -7,6 +7,12 @@ import { MunicipalityEntity } from './municipality.entity';
   model: {
     type: MunicipalityEntity,
   },
+  query: {
+    join: {
+      state: {},
+      locations: {},
+    },
+  },
 })
 @Controller('mexico/municipality')
 export class MunicipalityController implements CrudController<MunicipalityEntity> {

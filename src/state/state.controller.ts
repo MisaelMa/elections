@@ -7,6 +7,12 @@ import { StateService } from './state.service';
   model: {
     type: StateEntity,
   },
+  query: {
+    join: {
+      country: {},
+      municipalitys: {},
+    },
+  },
 })
 @Controller('mexico/state')
 export class StateController implements CrudController<StateEntity> {

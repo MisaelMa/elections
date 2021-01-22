@@ -1,6 +1,13 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { SectionEntity } from '../section/section.entity';
 import { LocationEntity } from '../location/location.entity';
+import { UserEntity } from '../user/user.entity';
+
+enum TypeOfPeople {
+  Lider = 1,
+  Promovido = 2,
+  Activista = 3,
+}
 
 @Entity('customer')
 export class CustomerEntity {
@@ -40,6 +47,11 @@ export class CustomerEntity {
   })
   direccion: string | null;
 
+  @Column('int', {
+    nullable: true,
+  })
+  peopleId: number | null;
+
   @Column('date', {
     nullable: false,
     default: () => 'CURRENT_TIMESTAMP',
@@ -53,6 +65,13 @@ export class CustomerEntity {
   })
   updatedAt: Date;
 
+  @Column({
+    type: 'simple-enum',
+    nullable: true,
+    enum: TypeOfPeople,
+  })
+  typeOfPeople: TypeOfPeople;
+
   @ManyToOne(type => SectionEntity, state => state.people, {
     cascade: ['insert'],
   })
@@ -62,4 +81,9 @@ export class CustomerEntity {
     cascade: ['insert'],
   })
   zona: LocationEntity;
+
+  @OneToOne(type => UserEntity, state => state.people, {
+    cascade: ['insert'],
+  })
+  user: UserEntity;
 }
