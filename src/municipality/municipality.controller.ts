@@ -19,8 +19,4 @@ export class MunicipalityController implements CrudController<MunicipalityEntity
   constructor(public service: MunicipalityService) {
   }
 
-  @Get()
-  async findAll() {
-    return await this.service.findAll();
-  }
 }
