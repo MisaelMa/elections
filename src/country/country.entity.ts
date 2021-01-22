@@ -15,7 +15,7 @@ export class CountryEntity {
   @Column()
   cod_tel: string;
 
-  @OneToMany(type => StateEntity, state => state.id_country)
+  @OneToMany(type => StateEntity, state => state.country)
   states: Promise<StateEntity[]>;
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP' })
