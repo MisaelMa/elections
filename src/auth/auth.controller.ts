@@ -9,7 +9,7 @@ import { LocalAuthGuard } from './guards/login.guard';
 import * as moment from 'moment';
 import { RefreshGuard } from './guards/refresh.guard';
 
-@Controller()
+@Controller('system/auth')
 export class AuthController {
   constructor(readonly authService: AuthService,
               // readonly authAccessTokensService: AuthAccessTokensService

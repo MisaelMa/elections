@@ -7,10 +7,13 @@ import { PassportModule } from '@nestjs/passport';
 import { UserModule } from '../user/user.module';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtConfigService } from './jwt-config.service';
+import { ConfigService } from '../config/config.service';
+import { ConfigModule } from '../config/config.module';
 
 @Module({
   imports: [
     UserModule,
+    ConfigModule,
     PassportModule.register({
       defaultStrategy: 'jwt',
       property: 'user',
@@ -18,6 +21,7 @@ import { JwtConfigService } from './jwt-config.service';
     }),
     JwtModule.registerAsync({
       useClass: JwtConfigService,
+      imports: [ConfigModule],
     }),
   ],
   providers: [
@@ -34,10 +38,13 @@ import { JwtConfigService } from './jwt-config.service';
   controllers: [AuthController],
 })
 export class AuthModule {
+  constructor(readonly configService: ConfigService) {
+
+  }
 
   public initialize(app: INestApplication) {
     app.use(session({
-      secret: 'misecreto',
+      secret: this.configService.get('API_SECRET'),
       resave: false,
       cookie: {
         httpOnly: true,

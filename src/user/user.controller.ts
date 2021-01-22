@@ -1,11 +1,12 @@
-import { Body, Controller, Post, Req, Res } from '@nestjs/common';
+import { Body, Controller, Post, Req, Res, UseGuards } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { UserEntity } from './user.entity';
 import { UserService } from './user.service';
 import { Response } from 'express';
 import { UpdatePasswordDto } from './dto/UpdatePassword.dto';
+import { JwtGuard } from '../auth/guards/jwt.guard';
 
-// @UseGuards(JwtGuard)
+@UseGuards(JwtGuard)
 @Crud({
   model: {
     type: UserEntity,

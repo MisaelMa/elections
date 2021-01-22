@@ -1,8 +1,10 @@
-import { Controller } from '@nestjs/common';
+import { Controller, UseGuards } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { CustomerEntity } from './customer.entity';
 import { CustomerService } from './customer.service';
+import { JwtGuard } from '../auth/guards/jwt.guard';
 
+@UseGuards(JwtGuard)
 @Crud({
   model: {
     type: CustomerEntity,

@@ -1,8 +1,10 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, UseGuards } from '@nestjs/common';
 import { MunicipalityService } from './municipality.service';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { MunicipalityEntity } from './municipality.entity';
+import { JwtGuard } from '../auth/guards/jwt.guard';
 
+@UseGuards(JwtGuard)
 @Crud({
   model: {
     type: MunicipalityEntity,
