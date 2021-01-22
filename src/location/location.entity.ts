@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { SectionEntity } from '../section/section.entity';
+import { CustomerEntity } from '../customer/customer.entity';
 
 @Entity('location')
 export class LocationEntity {
@@ -25,4 +26,7 @@ export class LocationEntity {
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
+
+  @OneToMany(type => CustomerEntity, people => people.zona)
+  people: CustomerEntity[];
 }

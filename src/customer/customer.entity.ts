@@ -1,4 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { SectionEntity } from '../section/section.entity';
+import { LocationEntity } from '../location/location.entity';
 
 @Entity('customer')
 export class CustomerEntity {
@@ -50,4 +52,14 @@ export class CustomerEntity {
     onUpdate: 'CURRENT_TIMESTAMP',
   })
   updatedAt: Date;
+
+  @ManyToOne(type => SectionEntity, state => state.people, {
+    cascade: ['insert'],
+  })
+  section: SectionEntity;
+
+  @ManyToOne(type => LocationEntity, state => state.people, {
+    cascade: ['insert'],
+  })
+  zona: LocationEntity;
 }

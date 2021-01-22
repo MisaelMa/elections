@@ -1,6 +1,7 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { LocationEntity } from '../location/location.entity';
+import { CustomerEntity } from '../customer/customer.entity';
 
 @Entity('section')
 export class SectionEntity {
@@ -19,4 +20,8 @@ export class SectionEntity {
 
   @Column('date', { default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
+
+  @OneToMany(type => CustomerEntity, people => people.section)
+  people: CustomerEntity[];
+
 }
