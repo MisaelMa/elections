@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/elections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/elections.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/location/location.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/location/location.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section/section.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/section/section.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/customer.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/customer.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +118,7 @@
       <workItem from="1611150772020" duration="1179000" />
       <workItem from="1611154955193" duration="1813000" />
       <workItem from="1611182160258" duration="5141000" />
-      <workItem from="1611277565076" duration="510000" />
+      <workItem from="1611277565076" duration="583000" />
     </task>
     <servers />
   </component>

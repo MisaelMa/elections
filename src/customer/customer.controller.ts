@@ -7,6 +7,12 @@ import { CustomerService } from './customer.service';
   model: {
     type: CustomerEntity,
   },
+  query: {
+    join: {
+      section: {},
+      zona: {},
+    },
+  },
 })
 @Controller('elections/customer')
 export class CustomerController implements CrudController<CustomerEntity> {
