@@ -4,7 +4,7 @@ import { CustomerEntity, TypeOfPeople } from './customer.entity';
 import { CustomerService } from './customer.service';
 import { JwtGuard } from '../auth/guards/jwt.guard';
 
-// @UseGuards(JwtGuard)
+@UseGuards(JwtGuard)
 @Crud({
   model: {
     type: CustomerEntity,

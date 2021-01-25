@@ -1,4 +1,5 @@
-import { Controller, Get, UseGuards } from '@nestjs/common';
+/* tslint:disable:object-literal-key-quotes */
+import { Controller, UseGuards } from '@nestjs/common';
 import { MunicipalityService } from './municipality.service';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { MunicipalityEntity } from './municipality.entity';
@@ -13,6 +14,9 @@ import { JwtGuard } from '../auth/guards/jwt.guard';
     join: {
       state: {},
       locations: {},
+      'locations.muncipality': {},
+      'locations.sections': {},
+      'locations.people': {},
     },
   },
 })
