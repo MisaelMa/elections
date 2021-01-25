@@ -3,7 +3,7 @@ import { SectionEntity } from '../section/section.entity';
 import { LocationEntity } from '../location/location.entity';
 import { UserEntity } from '../user/user.entity';
 
-enum TypeOfPeople {
+export enum TypeOfPeople {
   Lider = 1,
   Promovido = 2,
   Activista = 3,
