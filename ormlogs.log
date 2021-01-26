@@ -19,3 +19,24 @@
 [2019-11-02T02:02:40.928Z][QUERY]: INSERT INTO `agenda`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1572660155525,"removeData1572660155525"]
 [2019-11-02T02:02:40.933Z]Migration removeData1572660155525 has been executed successfully.
 [2019-11-02T02:02:40.933Z][QUERY]: COMMIT
+[2021-01-26T14:47:49.987Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T14:47:50.089Z][QUERY]: CREATE TABLE `agiconsu_elecciones`.`migrations_typeorm` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2021-01-26T14:47:50.193Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T14:47:50.288Z]0 migrations are already loaded in the database.
+[2021-01-26T14:47:50.288Z]1 migrations were found in the source code.
+[2021-01-26T14:47:50.288Z]1 migrations are new migrations that needs to be executed.
+[2021-01-26T14:47:50.289Z][QUERY]: START TRANSACTION
+[2021-01-26T14:47:50.381Z][QUERY]: ALTER TABLE `location` ADD `stateId` int NULL
+[2021-01-26T14:47:50.520Z][QUERY]: ALTER TABLE `location` ADD CONSTRAINT `FK_98f8f737401262fdb7c7c32cbf8` FOREIGN KEY (`stateId`) REFERENCES `state`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T14:47:50.637Z][QUERY]: INSERT INTO `agiconsu_elecciones`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611672433655,"createrealtions1611672433655"]
+[2021-01-26T14:47:50.730Z]Migration createrealtions1611672433655 has been executed successfully.
+[2021-01-26T14:47:50.731Z][QUERY]: COMMIT
+[2021-01-26T14:48:00.611Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T14:48:00.715Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T14:48:00.815Z]No migrations are pending
+[2021-01-26T14:49:35.612Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T14:49:35.716Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T14:49:35.815Z]No migrations are pending
+[2021-01-26T15:17:00.108Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:17:00.221Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:17:00.319Z]No migrations are pending

@@ -13,7 +13,7 @@ console.log(`Migración corriendo --> en la base de datos ${processEnv.DB_DBNAME
 
 const config: ConnectionOptions = {
   type: 'mysql',
-  // name: 'colegiodb',
+  name: 'ine',
   migrationsTableName: 'migrations_typeorm',
   host: processEnv.DB_HOST,
   port: processEnv.DB_PORT,

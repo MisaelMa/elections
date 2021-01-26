@@ -2,6 +2,7 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'ty
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { SectionEntity } from '../section/section.entity';
 import { CustomerEntity } from '../customer/customer.entity';
+import { StateEntity } from '../state/state.entity';
 
 @Entity('location')
 export class LocationEntity {
@@ -14,6 +15,11 @@ export class LocationEntity {
 
   @Column()
   name: string;
+
+  @ManyToOne(type => StateEntity, State => State.locations, {
+    cascade: ['insert'],
+  })
+  state: StateEntity;
 
   @ManyToOne(type => MunicipalityEntity, municipality => municipality.locations, {
     cascade: ['insert'],

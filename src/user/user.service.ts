@@ -5,11 +5,12 @@ import { Repository } from 'typeorm';
 import { hash } from 'bcrypt';
 import { UpdatePasswordDto } from './dto/UpdatePassword.dto';
 import { UserEntity } from './user.entity';
+import { DBNameConnection } from '../database/agendadb.service';
 
 @Injectable()
 export class UserService extends TypeOrmCrudService<UserEntity> {
   constructor(
-    @InjectRepository(UserEntity) readonly repo: Repository<UserEntity>,
+    @InjectRepository(UserEntity, DBNameConnection) readonly repo: Repository<UserEntity>,
   ) {
     super(repo);
   }

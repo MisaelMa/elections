@@ -2,11 +2,12 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { CountryEntity } from './country.entity';
 import { Repository } from 'typeorm';
+import { DBNameConnection } from '../database/agendadb.service';
 
 @Injectable()
 export class CountryService {
   constructor(
-    @InjectRepository(CountryEntity) private readonly countryRepository: Repository<CountryEntity>,
+    @InjectRepository(CountryEntity, DBNameConnection) private readonly countryRepository: Repository<CountryEntity>,
   ) {
   }
 

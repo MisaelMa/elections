@@ -11,6 +11,7 @@ import { JwtGuard } from '../auth/guards/jwt.guard';
   },
   query: {
     join: {
+      state: {},
       muncipality: {},
       sections: {},
       people: {},

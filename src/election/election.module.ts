@@ -4,10 +4,11 @@ import { ElectionResolver } from './election.resolver';
 import { ElectionController } from './election.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ElectionEntity } from './election.entity';
+import { DBNameConnection } from '../database/agendadb.service';
 
 @Module({
 
-  imports: [TypeOrmModule.forFeature([ElectionEntity])],
+  imports: [TypeOrmModule.forFeature([ElectionEntity], DBNameConnection)],
   providers: [ElectionService, ElectionResolver],
   controllers: [ElectionController],
 })

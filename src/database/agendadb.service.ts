@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { TypeOrmModuleOptions, TypeOrmOptionsFactory } from '@nestjs/typeorm';
 import { ConfigService } from '../config/config.service';
 
-export const ColegioDBNameConnection = 'elecciones';
+export const DBNameConnection = 'ine';
 
 @Injectable()
 export class AgendadbService implements TypeOrmOptionsFactory {
@@ -17,7 +17,7 @@ export class AgendadbService implements TypeOrmOptionsFactory {
       // entities: [__dirname + '/../**/*.entity{.ts,.js}'],
       // synchronize: true,
       type: 'mysql',
-      // name: ColegioDBNameConnection,
+      name: DBNameConnection,
       host: this.configService.get<string>('DB_HOST'),
       port: this.configService.get<number>('DB_PORT'),
       username: this.configService.get<string>('DB_USERNAME'),
