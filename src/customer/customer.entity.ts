@@ -2,6 +2,8 @@ import { Column, Entity, ManyToOne, OneToOne, PrimaryGeneratedColumn } from 'typ
 import { SectionEntity } from '../section/section.entity';
 import { LocationEntity } from '../location/location.entity';
 import { UserEntity } from '../user/user.entity';
+import { MunicipalityEntity } from '../municipality/municipality.entity';
+import { StateEntity } from '../state/state.entity';
 
 export enum TypeOfPeople {
   Lider = 1,
@@ -72,17 +74,27 @@ export class CustomerEntity {
   })
   typeOfPeople: TypeOfPeople;
 
-  @ManyToOne(type => SectionEntity, state => state.people, {
+  @ManyToOne(type => StateEntity, state => state.people, {
     cascade: ['insert'],
   })
-  section: SectionEntity;
+  state: StateEntity;
 
-  @ManyToOne(type => LocationEntity, state => state.people, {
+  @ManyToOne(type => MunicipalityEntity, mun => mun.people, {
+    cascade: ['insert'],
+  })
+  municipality: MunicipalityEntity;
+
+  @ManyToOne(type => LocationEntity, location => location.people, {
     cascade: ['insert'],
   })
   zona: LocationEntity;
 
-  @OneToOne(type => UserEntity, state => state.people, {
+  @ManyToOne(type => SectionEntity, sec => sec.people, {
+    cascade: ['insert'],
+  })
+  section: SectionEntity;
+
+  @OneToOne(type => UserEntity, user => user.people, {
     cascade: ['insert'],
   })
   user: UserEntity;

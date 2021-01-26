@@ -40,3 +40,79 @@
 [2021-01-26T15:17:00.108Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
 [2021-01-26T15:17:00.221Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
 [2021-01-26T15:17:00.319Z]No migrations are pending
+[2021-01-26T15:49:50.841Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:49:50.942Z][QUERY]: CREATE TABLE `agiconsu_elecciones_dev`.`migrations_typeorm` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2021-01-26T15:49:51.047Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:49:51.147Z]0 migrations are already loaded in the database.
+[2021-01-26T15:49:51.147Z]2 migrations were found in the source code.
+[2021-01-26T15:49:51.147Z]2 migrations are new migrations that needs to be executed.
+[2021-01-26T15:49:51.148Z][QUERY]: START TRANSACTION
+[2021-01-26T15:49:51.245Z][QUERY]: ALTER TABLE `location` ADD `stateId` int NULL
+[2021-01-26T15:49:51.385Z][FAILED QUERY]: ALTER TABLE `location` ADD `stateId` int NULL
+[2021-01-26T15:49:51.385Z][QUERY ERROR]: Error: ER_DUP_FIELDNAME: Duplicate column name 'stateId'
+[2021-01-26T15:49:51.385Z][QUERY]: ROLLBACK
+[2021-01-26T15:49:57.687Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:49:57.785Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:49:57.884Z]0 migrations are already loaded in the database.
+[2021-01-26T15:49:57.884Z]2 migrations were found in the source code.
+[2021-01-26T15:49:57.884Z]2 migrations are new migrations that needs to be executed.
+[2021-01-26T15:49:57.884Z][QUERY]: START TRANSACTION
+[2021-01-26T15:49:57.975Z][QUERY]: ALTER TABLE `location` ADD `stateId` int NULL
+[2021-01-26T15:49:58.116Z][FAILED QUERY]: ALTER TABLE `location` ADD `stateId` int NULL
+[2021-01-26T15:49:58.116Z][QUERY ERROR]: Error: ER_DUP_FIELDNAME: Duplicate column name 'stateId'
+[2021-01-26T15:49:58.117Z][QUERY]: ROLLBACK
+[2021-01-26T15:50:40.736Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:50:40.838Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:50:40.937Z]0 migrations are already loaded in the database.
+[2021-01-26T15:50:40.937Z]1 migrations were found in the source code.
+[2021-01-26T15:50:40.937Z]1 migrations are new migrations that needs to be executed.
+[2021-01-26T15:50:40.937Z][QUERY]: START TRANSACTION
+[2021-01-26T15:50:41.029Z][QUERY]: ALTER TABLE `section` ADD `stateId` int NULL
+[2021-01-26T15:50:41.164Z][QUERY]: ALTER TABLE `section` ADD `municipalityId` int NULL
+[2021-01-26T15:50:41.298Z][QUERY]: ALTER TABLE `section` ADD CONSTRAINT `FK_7338b6c95ef26838d30cf75ed46` FOREIGN KEY (`stateId`) REFERENCES `state`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:50:41.408Z][QUERY]: ALTER TABLE `section` ADD CONSTRAINT `FK_3de8df35689fdc37929c424552e` FOREIGN KEY (`municipalityId`) REFERENCES `municipality`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:50:41.520Z][QUERY]: INSERT INTO `agiconsu_elecciones_dev`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611676110547,"relationSsections1611676110547"]
+[2021-01-26T15:50:41.615Z]Migration relationSsections1611676110547 has been executed successfully.
+[2021-01-26T15:50:41.616Z][QUERY]: COMMIT
+[2021-01-26T15:50:56.653Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:50:56.760Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:50:56.854Z]1 migrations are already loaded in the database.
+[2021-01-26T15:50:56.854Z]1 migrations were found in the source code.
+[2021-01-26T15:50:56.859Z]createrealtions1611672433655 is the last executed migration. It was executed on Tue Jan 26 2021 09:47:13 GMT-0500 (hora estándar oriental).
+[2021-01-26T15:50:56.859Z]1 migrations are new migrations that needs to be executed.
+[2021-01-26T15:50:56.859Z][QUERY]: START TRANSACTION
+[2021-01-26T15:50:56.960Z][QUERY]: ALTER TABLE `section` ADD `stateId` int NULL
+[2021-01-26T15:50:57.097Z][QUERY]: ALTER TABLE `section` ADD `municipalityId` int NULL
+[2021-01-26T15:50:57.230Z][QUERY]: ALTER TABLE `section` ADD CONSTRAINT `FK_7338b6c95ef26838d30cf75ed46` FOREIGN KEY (`stateId`) REFERENCES `state`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:50:57.340Z][QUERY]: ALTER TABLE `section` ADD CONSTRAINT `FK_3de8df35689fdc37929c424552e` FOREIGN KEY (`municipalityId`) REFERENCES `municipality`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:50:57.451Z][QUERY]: INSERT INTO `agiconsu_elecciones`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611676110547,"relationSsections1611676110547"]
+[2021-01-26T15:50:57.548Z]Migration relationSsections1611676110547 has been executed successfully.
+[2021-01-26T15:50:57.549Z][QUERY]: COMMIT
+[2021-01-26T15:57:06.394Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:57:06.493Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:57:06.596Z]2 migrations are already loaded in the database.
+[2021-01-26T15:57:06.596Z]2 migrations were found in the source code.
+[2021-01-26T15:57:06.596Z]relationSsections1611676110547 is the last executed migration. It was executed on Tue Jan 26 2021 10:48:30 GMT-0500 (hora estándar oriental).
+[2021-01-26T15:57:06.596Z]1 migrations are new migrations that needs to be executed.
+[2021-01-26T15:57:06.596Z][QUERY]: START TRANSACTION
+[2021-01-26T15:57:06.684Z][QUERY]: ALTER TABLE `customer` ADD `stateId` int NULL
+[2021-01-26T15:57:06.788Z][QUERY]: ALTER TABLE `customer` ADD `municipalityId` int NULL
+[2021-01-26T15:57:06.893Z][QUERY]: ALTER TABLE `customer` ADD CONSTRAINT `FK_1691bdfb47fb7d7c93e3ec6822d` FOREIGN KEY (`stateId`) REFERENCES `state`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:57:06.997Z][QUERY]: ALTER TABLE `customer` ADD CONSTRAINT `FK_6b2e80dd5037bb6986641c68e87` FOREIGN KEY (`municipalityId`) REFERENCES `municipality`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:57:07.105Z][QUERY]: INSERT INTO `agiconsu_elecciones`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611676560850,"realctionspeople1611676560850"]
+[2021-01-26T15:57:07.193Z]Migration realctionspeople1611676560850 has been executed successfully.
+[2021-01-26T15:57:07.194Z][QUERY]: COMMIT
+[2021-01-26T15:57:14.740Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-26T15:57:14.909Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-26T15:57:15.050Z]1 migrations are already loaded in the database.
+[2021-01-26T15:57:15.050Z]2 migrations were found in the source code.
+[2021-01-26T15:57:15.050Z]relationSsections1611676110547 is the last executed migration. It was executed on Tue Jan 26 2021 10:48:30 GMT-0500 (hora estándar oriental).
+[2021-01-26T15:57:15.050Z]1 migrations are new migrations that needs to be executed.
+[2021-01-26T15:57:15.050Z][QUERY]: START TRANSACTION
+[2021-01-26T15:57:15.211Z][QUERY]: ALTER TABLE `customer` ADD `stateId` int NULL
+[2021-01-26T15:57:15.354Z][QUERY]: ALTER TABLE `customer` ADD `municipalityId` int NULL
+[2021-01-26T15:57:15.520Z][QUERY]: ALTER TABLE `customer` ADD CONSTRAINT `FK_1691bdfb47fb7d7c93e3ec6822d` FOREIGN KEY (`stateId`) REFERENCES `state`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:57:15.663Z][QUERY]: ALTER TABLE `customer` ADD CONSTRAINT `FK_6b2e80dd5037bb6986641c68e87` FOREIGN KEY (`municipalityId`) REFERENCES `municipality`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-01-26T15:57:15.827Z][QUERY]: INSERT INTO `agiconsu_elecciones_dev`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611676560850,"realctionspeople1611676560850"]
+[2021-01-26T15:57:15.968Z]Migration realctionspeople1611676560850 has been executed successfully.
+[2021-01-26T15:57:15.969Z][QUERY]: COMMIT

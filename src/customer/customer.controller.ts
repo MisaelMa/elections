@@ -11,8 +11,10 @@ import { JwtGuard } from '../auth/guards/jwt.guard';
   },
   query: {
     join: {
-      section: {},
+      state: {},
+      municipality: {},
       zona: {},
+      section: {},
       user: {},
     },
   },

@@ -2,6 +2,8 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'ty
 import { CountryEntity } from '../country/country.entity';
 import { MunicipalityEntity } from '../municipality/municipality.entity';
 import { LocationEntity } from '../location/location.entity';
+import { SectionEntity } from '../section/section.entity';
+import { CustomerEntity } from '../customer/customer.entity';
 
 @Entity('state')
 export class StateEntity {
@@ -32,6 +34,16 @@ export class StateEntity {
     cascade: ['insert'],
   })
   locations: LocationEntity[];
+
+  @OneToMany(type => SectionEntity, section => section.state, {
+    cascade: ['insert'],
+  })
+  sections: SectionEntity[];
+
+  @OneToMany(type => CustomerEntity, section => section.state, {
+    cascade: ['insert'],
+  })
+  people: CustomerEntity[];
 
   @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
