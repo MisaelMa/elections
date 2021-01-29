@@ -116,3 +116,31 @@
 [2021-01-26T15:57:15.827Z][QUERY]: INSERT INTO `agiconsu_elecciones_dev`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611676560850,"realctionspeople1611676560850"]
 [2021-01-26T15:57:15.968Z]Migration realctionspeople1611676560850 has been executed successfully.
 [2021-01-26T15:57:15.969Z][QUERY]: COMMIT
+[2021-01-29T22:02:54.980Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-29T22:02:55.127Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-29T22:02:55.305Z]2 migrations are already loaded in the database.
+[2021-01-29T22:02:55.305Z]3 migrations were found in the source code.
+[2021-01-29T22:02:55.312Z]realctionspeople1611676560850 is the last executed migration. It was executed on Tue Jan 26 2021 10:56:00 GMT-0500 (hora estándar oriental).
+[2021-01-29T22:02:55.312Z]1 migrations are new migrations that needs to be executed.
+[2021-01-29T22:02:55.312Z][QUERY]: START TRANSACTION
+[2021-01-29T22:02:55.453Z][QUERY]: ALTER TABLE `customer` ADD `facebook` varchar(60) NULL
+[2021-01-29T22:02:55.593Z][QUERY]: ALTER TABLE `customer` ADD `instagram` varchar(60) NULL
+[2021-01-29T22:02:55.738Z][QUERY]: ALTER TABLE `customer` ADD `twitter` varchar(60) NULL
+[2021-01-29T22:02:55.947Z][QUERY]: ALTER TABLE `customer` ADD `email` varchar(60) NULL
+[2021-01-29T22:02:56.084Z][QUERY]: INSERT INTO `agiconsu_elecciones_dev`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611957719492,"create1611957719492"]
+[2021-01-29T22:02:56.207Z]Migration create1611957719492 has been executed successfully.
+[2021-01-29T22:02:56.208Z][QUERY]: COMMIT
+[2021-01-29T22:03:19.205Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-01-29T22:03:19.305Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-01-29T22:03:19.402Z]3 migrations are already loaded in the database.
+[2021-01-29T22:03:19.402Z]3 migrations were found in the source code.
+[2021-01-29T22:03:19.402Z]realctionspeople1611676560850 is the last executed migration. It was executed on Tue Jan 26 2021 10:56:00 GMT-0500 (hora estándar oriental).
+[2021-01-29T22:03:19.402Z]1 migrations are new migrations that needs to be executed.
+[2021-01-29T22:03:19.402Z][QUERY]: START TRANSACTION
+[2021-01-29T22:03:19.492Z][QUERY]: ALTER TABLE `customer` ADD `facebook` varchar(60) NULL
+[2021-01-29T22:03:19.731Z][QUERY]: ALTER TABLE `customer` ADD `instagram` varchar(60) NULL
+[2021-01-29T22:03:19.864Z][QUERY]: ALTER TABLE `customer` ADD `twitter` varchar(60) NULL
+[2021-01-29T22:03:19.996Z][QUERY]: ALTER TABLE `customer` ADD `email` varchar(60) NULL
+[2021-01-29T22:03:20.131Z][QUERY]: INSERT INTO `agiconsu_elecciones`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611957719492,"create1611957719492"]
+[2021-01-29T22:03:20.226Z]Migration create1611957719492 has been executed successfully.
+[2021-01-29T22:03:20.227Z][QUERY]: COMMIT

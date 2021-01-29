@@ -98,4 +98,28 @@ export class CustomerEntity {
     cascade: ['insert'],
   })
   user: UserEntity;
+
+  @Column('varchar', {
+    nullable: true,
+    length: 60,
+  })
+  facebook: string | null;
+
+  @Column('varchar', {
+    nullable: true,
+    length: 60,
+  })
+  instagram: string | null;
+
+  @Column('varchar', {
+    nullable: true,
+    length: 60,
+  })
+  twitter: string | null;
+
+  @Column('varchar', {
+    nullable: true,
+    length: 60,
+  })
+  email: string | null;
 }
