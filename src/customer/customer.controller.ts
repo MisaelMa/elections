@@ -40,6 +40,27 @@ export class CustomerController implements CrudController<CustomerEntity> {
     return respuesta;
   }
 
+  @Get('dashboard/count-type')
+  async dasbboardCountType() {
+    const result = [];
+    result.push({
+      label: 'Lider',
+      quantity: await this.service.count({ where: { typeOfPeople: TypeOfPeople.Lider } }),
+    });
+
+    result.push({
+      label: 'activista',
+      quantity: await this.service.count({ where: { typeOfPeople: TypeOfPeople.Activista } }),
+    });
+
+    result.push({
+      label: 'Promovido',
+      quantity: await this.service.count({ where: { typeOfPeople: TypeOfPeople.Promovido } }),
+    });
+
+    return result;
+  }
+
   @Get('report')
   async report(@Req() req, @Res() res: Response, @Query() query: {
     stateId: number,
