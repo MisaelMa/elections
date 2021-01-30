@@ -1,8 +1,9 @@
-import { Controller, Get, UseGuards } from '@nestjs/common';
+import { Controller, Get, Query, Req, Res } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { CustomerEntity, TypeOfPeople } from './customer.entity';
 import { CustomerService } from './customer.service';
-import { JwtGuard } from '../auth/guards/jwt.guard';
+import { Response } from 'express';
+import { ReporteCustomer } from './reporte/reporteCustomer';
 
 @UseGuards(JwtGuard)
 @Crud({
@@ -36,5 +37,54 @@ export class CustomerController implements CrudController<CustomerEntity> {
     respuesta.activista = await this.service.count({ where: { typeOfPeople: TypeOfPeople.Activista } });
     respuesta.promovido = await this.service.count({ where: { typeOfPeople: TypeOfPeople.Promovido } });
     return respuesta;
+  }
+
+  @Get('report')
+  async report(@Req() req, @Res() res: Response, @Query() query: {
+    stateId: number,
+    municipalityId: number,
+    zonaId: number,
+    seccionId: number,
+    typePerson: number,
+  }) {
+
+    const customer = this.service.repo.createQueryBuilder('customer');
+    customer.leftJoinAndSelect('customer.state', 'state');
+    customer.leftJoinAndSelect('customer.municipality', 'municipality');
+    customer.leftJoinAndSelect('customer.zona', 'zona');
+    customer.leftJoinAndSelect('customer.section', 'section');
+
+    if (query.stateId && query.stateId !== 0) {
+      customer.where('state.id = :id', {
+        id: query.stateId,
+      });
+    }
+
+    if (query.municipalityId && query.municipalityId !== 0) {
+      customer.where('municipality.id = :id', {
+        id: query.municipalityId,
+      });
+    }
+
+    if (query.zonaId && query.zonaId !== 0) {
+      customer.where('zona.id = :id', {
+        id: query.zonaId,
+      });
+    }
+
+    if (query.seccionId && query.seccionId !== 0) {
+      customer.where('section.id = :id', {
+        id: query.seccionId,
+      });
+    }
+
+    if (query.typePerson && query.typePerson !== 0) {
+      customer.where('typeOfPeople = :type', {
+        type: query.typePerson,
+      });
+    }
+
+    const reporte = await customer.getMany();
+    res.send({ src: await new ReporteCustomer().generate(reporte) });
   }
 }
