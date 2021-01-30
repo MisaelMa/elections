@@ -1,9 +1,10 @@
-import { Controller, Get, Query, Req, Res } from '@nestjs/common';
+import { Controller, Get, Query, Req, Res, UseGuards } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { CustomerEntity, TypeOfPeople } from './customer.entity';
 import { CustomerService } from './customer.service';
 import { Response } from 'express';
 import { ReporteCustomer } from './reporte/reporteCustomer';
+import { JwtGuard } from '../auth/guards/jwt.guard';
 
 @UseGuards(JwtGuard)
 @Crud({
@@ -54,31 +55,31 @@ export class CustomerController implements CrudController<CustomerEntity> {
     customer.leftJoinAndSelect('customer.zona', 'zona');
     customer.leftJoinAndSelect('customer.section', 'section');
 
-    if (query.stateId && query.stateId !== 0) {
+    if (query.stateId && query.stateId !== 0 && query.stateId.toString() !== '0') {
       customer.where('state.id = :id', {
         id: query.stateId,
       });
     }
 
-    if (query.municipalityId && query.municipalityId !== 0) {
+    if (query.municipalityId && query.municipalityId !== 0 && query.municipalityId.toString() !== '0') {
       customer.where('municipality.id = :id', {
         id: query.municipalityId,
       });
     }
 
-    if (query.zonaId && query.zonaId !== 0) {
+    if (query.zonaId && query.zonaId !== 0 && query.zonaId.toString() !== '0') {
       customer.where('zona.id = :id', {
         id: query.zonaId,
       });
     }
 
-    if (query.seccionId && query.seccionId !== 0) {
+    if (query.seccionId && query.seccionId !== 0 && query.seccionId.toString() !== '0') {
       customer.where('section.id = :id', {
         id: query.seccionId,
       });
     }
 
-    if (query.typePerson && query.typePerson !== 0) {
+    if (query.typePerson && query.typePerson !== 0 && query.typePerson.toString() !== '0') {
       customer.where('typeOfPeople = :type', {
         type: query.typePerson,
       });

@@ -1,5 +1,5 @@
 import * as Excel from 'exceljs';
-import { CustomerEntity } from '../customer.entity';
+import { CustomerEntity, TypeOfPeople } from '../customer.entity';
 
 export class ReporteCustomer {
   async generate(data: CustomerEntity[]) {
@@ -38,22 +38,21 @@ export class ReporteCustomer {
       transforms.push(peop.clave);
       transforms.push(peop.phone);
       transforms.push(peop.direccion);
-      transforms.push('typo');
+      transforms.push(this.typePersona(peop.typeOfPeople));
       transforms.push(peop.state.name);
       transforms.push(peop.municipality.name);
       transforms.push(peop.zona.name);
       transforms.push(peop.section.name);
       transforms.push('');
-      transforms.push(peop.facebook);
-      transforms.push(peop.instagram);
-      transforms.push(peop.twitter);
+      // transforms.push(peop.facebook);
+      // transforms.push(peop.instagram);
+      // transforms.push(peop.twitter);
       transforms.push(peop.email);
       peopledata.push(transforms);
     });
     paymentsSheet.addTable({
       name: 'personas',
       ref: 'F1',
-      totalsRow: true,
       style: {
         showColumnStripes: true,
       },
@@ -68,14 +67,33 @@ export class ReporteCustomer {
         { name: 'zona' },
         { name: 'seccion' },
         { name: 'Reclutador' },
-        { name: 'facebook' },
-        { name: 'instagram' },
-        { name: 'twitter' },
+        // { name: 'facebook' },
+        // { name: 'instagram' },
+        // { name: 'twitter' },
         { name: 'email' },
       ],
       rows: peopledata,
 
     });
 
+  }
+
+  private typePersona(type: TypeOfPeople) {
+    let text = '';
+    switch (type) {
+      case TypeOfPeople.Activista:
+        text = 'Activistas';
+        break;
+      case TypeOfPeople.Lider:
+        text = 'Lider';
+        break;
+      case TypeOfPeople.Promovido:
+        text = 'Promovido';
+
+        break;
+      default:
+        text = '';
+    }
+    return text;
   }
 }
