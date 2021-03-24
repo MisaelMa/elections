@@ -144,3 +144,35 @@
 [2021-01-29T22:03:20.131Z][QUERY]: INSERT INTO `agiconsu_elecciones`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1611957719492,"create1611957719492"]
 [2021-01-29T22:03:20.226Z]Migration create1611957719492 has been executed successfully.
 [2021-01-29T22:03:20.227Z][QUERY]: COMMIT
+[2021-03-23T19:09:54.422Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-03-23T19:09:54.562Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-03-23T19:09:54.683Z]3 migrations are already loaded in the database.
+[2021-03-23T19:09:54.684Z]4 migrations were found in the source code.
+[2021-03-23T19:09:54.689Z]create1611957719492 is the last executed migration. It was executed on Fri Jan 29 2021 17:01:59 GMT-0500 (hora estándar oriental).
+[2021-03-23T19:09:54.691Z]1 migrations are new migrations that needs to be executed.
+[2021-03-23T19:09:54.695Z][QUERY]: START TRANSACTION
+[2021-03-23T19:09:55.135Z][QUERY]: CREATE TABLE `route_action` (`id` int NOT NULL AUTO_INCREMENT, `routeId` int NULL, `actionId` int NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2021-03-23T19:09:55.251Z][QUERY]: CREATE TABLE `permission_actions_action` (`permissionId` int NOT NULL, `actionId` int NOT NULL, INDEX `IDX_579107c19122b9ccc787770dc7` (`permissionId`), INDEX `IDX_ed0e55e485a32756caf0273e93` (`actionId`), PRIMARY KEY (`permissionId`, `actionId`)) ENGINE=InnoDB
+[2021-03-23T19:09:55.370Z][QUERY]: ALTER TABLE `route_action` ADD CONSTRAINT `FK_2af40dd2596a3da300239f87afe` FOREIGN KEY (`routeId`) REFERENCES `route`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-03-23T19:09:55.491Z][QUERY]: ALTER TABLE `route_action` ADD CONSTRAINT `FK_95d4c3d3edbb09b8edd26cebb9f` FOREIGN KEY (`actionId`) REFERENCES `action`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-03-23T19:09:55.619Z][QUERY]: ALTER TABLE `permission_actions_action` ADD CONSTRAINT `FK_579107c19122b9ccc787770dc7f` FOREIGN KEY (`permissionId`) REFERENCES `permission`(`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+[2021-03-23T19:09:55.754Z][QUERY]: ALTER TABLE `permission_actions_action` ADD CONSTRAINT `FK_ed0e55e485a32756caf0273e936` FOREIGN KEY (`actionId`) REFERENCES `action`(`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+[2021-03-23T19:09:55.877Z][QUERY]: INSERT INTO `agiconsu_elecciones_dev`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1616525284274,"permission1616525284274"]
+[2021-03-23T19:09:55.989Z]Migration permission1616525284274 has been executed successfully.
+[2021-03-23T19:09:55.992Z][QUERY]: COMMIT
+[2021-03-24T00:11:17.430Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-03-24T00:11:17.543Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-03-24T00:11:17.654Z]4 migrations are already loaded in the database.
+[2021-03-24T00:11:17.655Z]4 migrations were found in the source code.
+[2021-03-24T00:11:17.659Z]create1611957719492 is the last executed migration. It was executed on Fri Jan 29 2021 17:01:59 GMT-0500 (hora estándar oriental).
+[2021-03-24T00:11:17.660Z]1 migrations are new migrations that needs to be executed.
+[2021-03-24T00:11:17.663Z][QUERY]: START TRANSACTION
+[2021-03-24T00:11:17.767Z][QUERY]: CREATE TABLE `route_action` (`id` int NOT NULL AUTO_INCREMENT, `routeId` int NULL, `actionId` int NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2021-03-24T00:11:17.879Z][QUERY]: CREATE TABLE `permission_actions_action` (`permissionId` int NOT NULL, `actionId` int NOT NULL, INDEX `IDX_579107c19122b9ccc787770dc7` (`permissionId`), INDEX `IDX_ed0e55e485a32756caf0273e93` (`actionId`), PRIMARY KEY (`permissionId`, `actionId`)) ENGINE=InnoDB
+[2021-03-24T00:11:17.992Z][QUERY]: ALTER TABLE `route_action` ADD CONSTRAINT `FK_2af40dd2596a3da300239f87afe` FOREIGN KEY (`routeId`) REFERENCES `route`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-03-24T00:11:18.114Z][QUERY]: ALTER TABLE `route_action` ADD CONSTRAINT `FK_95d4c3d3edbb09b8edd26cebb9f` FOREIGN KEY (`actionId`) REFERENCES `action`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2021-03-24T00:11:18.232Z][QUERY]: ALTER TABLE `permission_actions_action` ADD CONSTRAINT `FK_579107c19122b9ccc787770dc7f` FOREIGN KEY (`permissionId`) REFERENCES `permission`(`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+[2021-03-24T00:11:18.351Z][QUERY]: ALTER TABLE `permission_actions_action` ADD CONSTRAINT `FK_ed0e55e485a32756caf0273e936` FOREIGN KEY (`actionId`) REFERENCES `action`(`id`) ON DELETE CASCADE ON UPDATE NO ACTION
+[2021-03-24T00:11:18.472Z][QUERY]: INSERT INTO `agiconsu_elecciones`.`migrations_typeorm`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1616525284274,"permission1616525284274"]
+[2021-03-24T00:11:18.575Z]Migration permission1616525284274 has been executed successfully.
+[2021-03-24T00:11:18.579Z][QUERY]: COMMIT

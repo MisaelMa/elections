@@ -1,5 +1,7 @@
-import {Column, Entity, ManyToMany, PrimaryGeneratedColumn} from 'typeorm';
+import { Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Route } from '../../routes/entities/route.entity';
+import { RouteAction } from '../../route-action/entities/route-action.entity';
+import { Permission } from '../../permissions/entities/permission.entity';
 
 @Entity()
 export class Action {
@@ -27,6 +29,11 @@ export class Action {
     })
     updatedAt: Date;
 
-    @ManyToMany(() => Route, (route) => route.actions)
-    routes: Route[];
+    @OneToMany(type => RouteAction, routeAction => routeAction.action)
+    routeActions: RouteAction[];
+
+    @ManyToMany(() => Permission, (permission) => permission.actions, {
+        cascade: ['insert', 'update'],
+    })
+    permission: Permission[];
 }

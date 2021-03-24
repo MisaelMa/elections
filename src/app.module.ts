@@ -20,6 +20,8 @@ import { RolesModule } from './roles/roles.module';
 import { CustomerModule } from './customer/customer.module';
 import { ConfigModule } from './config/config.module';
 import { AgendadbService, DBNameConnection } from './database/agendadb.service';
+import { RouteActionModule } from './route-action/route-action.module';
+import { ActionsModule } from './actions/actions.module';
 // @ts-ignore left join only
 // tslint:disable-next-line:only-arrow-functions
 TypeOrmCrudService.prototype.getJoinType = function(s: string) {
@@ -42,6 +44,8 @@ TypeOrmCrudService.prototype.getJoinType = function(s: string) {
     RoutesModule,
     PermissionsModule,
     RolesModule,
+    RouteActionModule,
+    ActionsModule,
     VoteModule,
     TypelectionModule,
     LocationModule,

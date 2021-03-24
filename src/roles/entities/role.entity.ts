@@ -20,9 +20,6 @@ export class Role {
     })
     name: string;
 
-    @OneToMany(() => Permission, (permission) => permission.role)
-    permissions: Permission[];
-
     @Column('timestamp', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
@@ -35,6 +32,9 @@ export class Role {
         onUpdate: 'CURRENT_TIMESTAMP',
     })
     updatedAt: Date;
+
+    @OneToMany(() => Permission, (permission) => permission.role)
+    permissions: Permission[];
 
     @OneToMany(() => UserEntity, (user) => user.role )
     users: UserEntity[];

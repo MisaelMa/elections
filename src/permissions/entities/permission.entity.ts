@@ -1,6 +1,7 @@
-import {Column, Entity, ManyToOne, PrimaryGeneratedColumn, Tree, TreeChildren, TreeParent} from 'typeorm';
+import { Column, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryGeneratedColumn, Tree, TreeChildren, TreeParent } from 'typeorm';
 import { Role } from '../../roles/entities/role.entity';
 import { Route } from '../../routes/entities/route.entity';
+import { Action } from '../../actions/entities/action.entity';
 
 @Entity()
 export class Permission {
@@ -17,6 +18,7 @@ export class Permission {
         default: () => 'CURRENT_TIMESTAMP',
     })
     createdAt: Date;
+
     @Column('timestamp', {
         nullable: false,
         default: () => 'CURRENT_TIMESTAMP',
@@ -29,5 +31,11 @@ export class Permission {
 
     @ManyToOne(() => Route, (route) => route.permissions )
     route: Route;
+
+    @ManyToMany(() => Action, (action) => action.permission, {
+        cascade: ['insert', 'update', 'remove'],
+    })
+    @JoinTable()
+    actions: Action[];
 
 }
