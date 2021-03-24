@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/seeds/action.insert.update.seed.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/seeds/actions.catalogue.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/migrations/1616525284274-permission.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route-action/entities/route-action.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route-action/route-action.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route-action/route-action.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route-action/route-action.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route-action/seeds/route-action.catalogue.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route-action/seeds/route-action.insert.update.seed.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ormlogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/ormlogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/entities/action.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/entities/action.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/permissions/entities/permission.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/permissions/entities/permission.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roles/entities/role.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/entities/role.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/entities/route.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/entities/route.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/permissions/permissions.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/permissions/permissions.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/roles.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/roles.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +141,8 @@
       <workItem from="1611926461087" duration="14000" />
       <workItem from="1611957613233" duration="3594000" />
       <workItem from="1612035888893" duration="2762000" />
-      <workItem from="1616523790427" duration="5552000" />
+      <workItem from="1616523790427" duration="5586000" />
+      <workItem from="1616591869517" duration="148000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ import { RolesService } from './roles.service';
         type: Role,
     },
 })
-@Controller()
+@Controller('system/roles')
 export class RolesController implements CrudController<Role> {
     constructor(
         readonly service: RolesService,

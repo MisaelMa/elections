@@ -15,7 +15,7 @@ import { PermissionDto } from './DTO/permission.dto';
         },
     },
 })
-@Controller()
+@Controller('system/permissions')
 export class PermissionsController implements CrudController<Permission> {
     constructor(
         readonly service: PermissionsService,

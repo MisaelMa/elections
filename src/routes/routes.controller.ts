@@ -8,7 +8,7 @@ import { RoutesService } from './routes.service';
         type: Route,
     },
 })
-@Controller('routes')
+@Controller('system/routes')
 export class RoutesController implements CrudController<Route> {
     constructor(
         readonly service: RoutesService,
