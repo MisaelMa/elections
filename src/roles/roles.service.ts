@@ -7,9 +7,19 @@ import { DBNameConnection } from '../database/agendadb.service';
 
 @Injectable()
 export class RolesService extends TypeOrmCrudService<Role> {
-    constructor(
-      @InjectRepository(Role, DBNameConnection) repo: Repository<Role>,
-    ) {
-        super(repo);
-    }
+  constructor(
+    @InjectRepository(Role, DBNameConnection) repo: Repository<Role>,
+  ) {
+    super(repo);
+  }
+
+  async getPermissionRol(id: number) {
+    const permission = await this.repo.createQueryBuilder('role')
+      .leftJoinAndSelect('role.permissions', 'permissions')
+      .leftJoinAndSelect('permissions.route', 'route')
+      .leftJoinAndSelect('permissions.actions', 'actions')
+      .where('role.id = :id', { id })
+      .getOne();
+    return permission;
+  }
 }

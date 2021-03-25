@@ -9,6 +9,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { JwtConfigService } from './jwt-config.service';
 import { ConfigService } from '../config/config.service';
 import { ConfigModule } from '../config/config.module';
+import { RolesModule } from '../roles/roles.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { ConfigModule } from '../config/config.module';
       useClass: JwtConfigService,
       imports: [ConfigModule],
     }),
+    RolesModule,
   ],
   providers: [
     AuthService,

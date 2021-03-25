@@ -61,6 +61,7 @@ export class AuthService {
     //         ],
     //     });
     const user: UserEntity | undefined = await this.usersService.repo.createQueryBuilder('users')
+      .leftJoinAndSelect('users.role', 'role')
       .where('users.email = :email', { email })
       .getOne();
     if (user && bcrypt.compareSync(passw, user.password.replace('$2y$', '$2a$'))) {

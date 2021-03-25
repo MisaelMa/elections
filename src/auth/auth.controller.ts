@@ -8,10 +8,13 @@ import { LocalAuthGuard } from './guards/login.guard';
 // import { AuthAccessTokensService } from '../auth-access-tokens/auth-access-tokens.service';
 import * as moment from 'moment';
 import { RefreshGuard } from './guards/refresh.guard';
+import { RolesService } from '../roles/roles.service';
+import routes from '../routes/seeds/route.catalogue';
 
 @Controller('system/auth')
 export class AuthController {
   constructor(readonly authService: AuthService,
+              readonly roleService: RolesService,
               // readonly authAccessTokensService: AuthAccessTokensService
   ) {
   }
@@ -20,6 +23,8 @@ export class AuthController {
   @Post('login')
   async login(@Req() req, @Res() res: Response) {
     const jwt = await this.authService.generateJWT(req.user);
+    // tslint:disable-next-line:no-shadowed-variable
+    const routes = await this.roleService.getPermissionRol(req.user.role.id);
     // await this.authAccessTokensService.saveToken({
     //   expiresAt: moment(jwt.decode.exp * 1000).toDate(),
     //   name: 'token',
@@ -31,10 +36,10 @@ export class AuthController {
     //   clientId: 1,
     //   userId: req.user.id,
     // });
-
     res.status(200);
     res.send({
       user: req.user,
+      permission: routes.permissions,
       token: jwt.access_token,
     });
   }
