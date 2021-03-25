@@ -22,8 +22,8 @@ const config: ConnectionOptions = {
   database: processEnv.DB_DBNAME,
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   // @ts-ignore
-  seeds: [ '/**/*.seed{.ts,.js}'],
-  factories: ['/**/*.factory{.ts,.js}'],
+  seeds: [ __dirname + '/**/*.seed{.ts,.js}'],
+  factories: [__dirname + '/**/*.factory{.ts,.js}'],
   // We are using migrations, synchronize should be set to false.
   synchronize: false,
 

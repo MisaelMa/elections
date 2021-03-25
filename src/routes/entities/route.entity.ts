@@ -3,7 +3,7 @@ import { Permission } from '../../permissions/entities/permission.entity';
 import { Action } from '../../actions/entities/action.entity';
 import { RouteAction } from '../../route-action/entities/route-action.entity';
 
-@Entity()
+@Entity('route')
 export class Route {
   @PrimaryGeneratedColumn({
     type: 'int',
