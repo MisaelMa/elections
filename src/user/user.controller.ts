@@ -1,10 +1,17 @@
-import { Body, Controller, Post, Req, Res, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Req, Res, UseGuards } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { UserEntity } from './user.entity';
 import { UserService } from './user.service';
 import { Response } from 'express';
 import { UpdatePasswordDto } from './dto/UpdatePassword.dto';
 import { JwtGuard } from '../auth/guards/jwt.guard';
+import { EntityMetadata } from 'typeorm';
+import * as bcrypt from 'bcrypt';
+
+interface DataBase {
+  name: string;
+  tableName: string;
+}
 
 @UseGuards(JwtGuard)
 @Crud({
@@ -28,6 +35,55 @@ export class UserController implements CrudController<UserEntity> {
 
   get base(): CrudController<UserEntity> {
     return this;
+  }
+
+  @Get('tables')
+  async getTables() {
+    const entities: DataBase[] = [];
+    (await (await this.service.repo.createQueryBuilder().connection).entityMetadatas).forEach(
+      async (x: EntityMetadata, i) => {
+
+        entities.push({
+          name: x.name,
+          tableName: x.tableName,
+        });
+      },
+    );
+    return entities;
+  }
+
+  @Post('drop-data-base')
+  async cleanAll(@Body() userBody: { email: string, password: string }, @Req() req, @Res() res: Response) {
+    try {
+      const user: UserEntity | undefined = await this.service.repo.createQueryBuilder('users')
+        .leftJoinAndSelect('users.role', 'role')
+        .where('users.email = :email', { email: userBody.email })
+        .getOne();
+      if (user && bcrypt.compareSync(userBody.password, user.password.replace('$2y$', '$2a$'))) {
+        const repository = await this.service.repo.createQueryBuilder().connection;
+        await repository.dropDatabase();
+        if (repository.isConnected) {
+           await repository.close();
+        }
+        res.status(200);
+        res.send({
+          status: 200,
+          msg: 'Base de datos eliminada',
+        });
+      } else {
+        res.status(400);
+        res.send({
+          status: 400,
+          msg: 'Datos incorrectos',
+        });
+      }
+    } catch (error) {
+      res.status(400);
+      res.send({
+        status: 400,
+        msg: 'Datos incorrectos',
+      });
+    }
   }
 
   @Post('store')

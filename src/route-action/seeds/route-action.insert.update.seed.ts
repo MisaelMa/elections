@@ -5,21 +5,6 @@ import { RouteAction } from '../entities/route-action.entity';
 
 export default class RouteActionInsertUpdateSeed implements Seeder {
     public async run(factory: Factory, connection: Connection): Promise<any> {
-        await connection
-            .createQueryBuilder()
-            .insert()
-            .into(RouteAction)
-            .values([...routesActions])
-            .orUpdate({
-                conflict_target: ['id'],
-                overwrite: [
-                    'id',
-                    `routeId`,
-                    `actionId`,
-                ],
-            })
-            .orIgnore()// para ignorar valores duplicado
-            .execute();
+      await connection.getRepository(RouteAction).save([...routesActions]);
     }
 }
-

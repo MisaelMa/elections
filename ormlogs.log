@@ -229,3 +229,73 @@
 [2021-03-24T23:53:15.033Z][QUERY]: START TRANSACTION
 [2021-03-24T23:53:15.155Z][QUERY]: UPDATE `route` SET `icon` = ? WHERE `id` IN (?) -- PARAMETERS: ["mdi-mexico",5]
 [2021-03-24T23:53:15.272Z][QUERY]: COMMIT
+[2021-04-01T20:37:26.045Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:37:26.176Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:37:26.422Z][QUERY]: INSERT  IGNORE INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT), (?, ?, DEFAULT, DEFAULT), (?, ?, DEFAULT, DEFAULT), (?, ?, DEFAULT, DEFAULT) ON DUPLICATE KEY UPDATE name = VALUES(name), description = VALUES(description), icon = VALUES(icon), isDefault = VALUES(isDefault) -- PARAMETERS: [1,"CREATE",2,"READ",3,"UPDATE",4,"DELETE"]
+[2021-04-01T20:37:26.669Z][FAILED QUERY]: INSERT  IGNORE INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT), (?, ?, DEFAULT, DEFAULT), (?, ?, DEFAULT, DEFAULT), (?, ?, DEFAULT, DEFAULT) ON DUPLICATE KEY UPDATE name = VALUES(name), description = VALUES(description), icon = VALUES(icon), isDefault = VALUES(isDefault) -- PARAMETERS: [1,"CREATE",2,"READ",3,"UPDATE",4,"DELETE"]
+[2021-04-01T20:37:26.669Z][QUERY ERROR]: Error: ER_BAD_FIELD_ERROR: Unknown column 'description' in 'field list'
+[2021-04-01T20:38:41.203Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:38:41.345Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:38:41.597Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`name` AS `Action_name`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` IN (?, ?, ?, ?) -- PARAMETERS: [1,2,3,4]
+[2021-04-01T20:38:41.732Z][QUERY]: START TRANSACTION
+[2021-04-01T20:38:41.858Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [1,"CREATE"]
+[2021-04-01T20:38:41.981Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [1]
+[2021-04-01T20:38:42.103Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [2,"READ"]
+[2021-04-01T20:38:42.209Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [2]
+[2021-04-01T20:38:42.322Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [3,"UPDATE"]
+[2021-04-01T20:38:42.428Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [3]
+[2021-04-01T20:38:42.533Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [4,"DELETE"]
+[2021-04-01T20:38:42.637Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [4]
+[2021-04-01T20:38:42.750Z][QUERY]: COMMIT
+[2021-04-01T20:39:33.927Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:39:34.059Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:39:34.307Z][QUERY]: SELECT `RouteAction`.`id` AS `RouteAction_id`, `RouteAction`.`routeId` AS `RouteAction_routeId`, `RouteAction`.`actionId` AS `RouteAction_actionId` FROM `route_action` `RouteAction` WHERE `RouteAction`.`id` IN (?) -- PARAMETERS: [1]
+[2021-04-01T20:39:34.424Z][QUERY]: START TRANSACTION
+[2021-04-01T20:39:34.554Z][QUERY]: INSERT INTO `route_action`(`id`, `routeId`, `actionId`) VALUES (?, ?, ?) -- PARAMETERS: [1,12,4]
+[2021-04-01T20:39:34.773Z][FAILED QUERY]: INSERT INTO `route_action`(`id`, `routeId`, `actionId`) VALUES (?, ?, ?) -- PARAMETERS: [1,12,4]
+[2021-04-01T20:39:34.773Z][QUERY ERROR]: Error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`agiconsu_elecciones_dev`.`route_action`, CONSTRAINT `FK_2af40dd2596a3da300239f87afe` FOREIGN KEY (`routeId`) REFERENCES `route` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[2021-04-01T20:39:34.775Z][QUERY]: ROLLBACK
+[2021-04-01T20:40:19.475Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:40:19.594Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:40:19.864Z][QUERY]: SELECT `Route`.`id` AS `Route_id`, `Route`.`isActive` AS `Route_isActive`, `Route`.`name` AS `Route_name`, `Route`.`fatherID` AS `Route_fatherID`, `Route`.`level` AS `Route_level`, `Route`.`url` AS `Route_url`, `Route`.`icon` AS `Route_icon`, `Route`.`createdAt` AS `Route_createdAt`, `Route`.`updatedAt` AS `Route_updatedAt` FROM `route` `Route` WHERE `Route`.`id` IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) -- PARAMETERS: [1,2,3,4,5,6,7,8,9,10,11,12]
+[2021-04-01T20:40:20.000Z][QUERY]: START TRANSACTION
+[2021-04-01T20:40:20.124Z][QUERY]: INSERT INTO `route`(`id`, `isActive`, `name`, `fatherID`, `level`, `url`, `icon`, `createdAt`, `updatedAt`) VALUES (?, ?, ?, ?, ?, ?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [12,1,"Base de Datos",10,2,"/database","mdi-database"]
+[2021-04-01T20:40:20.245Z][QUERY]: SELECT `Route`.`id` AS `Route_id`, `Route`.`createdAt` AS `Route_createdAt`, `Route`.`updatedAt` AS `Route_updatedAt` FROM `route` `Route` WHERE `Route`.`id` = ? -- PARAMETERS: [12]
+[2021-04-01T20:40:20.374Z][QUERY]: UPDATE `route` SET `level` = ? WHERE `id` IN (?) -- PARAMETERS: [1,11]
+[2021-04-01T20:40:20.492Z][QUERY]: COMMIT
+[2021-04-01T20:41:39.116Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:41:39.243Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:41:39.645Z][QUERY]: SELECT `RouteAction`.`id` AS `RouteAction_id`, `RouteAction`.`routeId` AS `RouteAction_routeId`, `RouteAction`.`actionId` AS `RouteAction_actionId` FROM `route_action` `RouteAction` WHERE `RouteAction`.`id` IN (?) -- PARAMETERS: [1]
+[2021-04-01T20:41:39.760Z][QUERY]: START TRANSACTION
+[2021-04-01T20:41:39.873Z][QUERY]: INSERT INTO `route_action`(`id`, `routeId`, `actionId`) VALUES (?, ?, ?) -- PARAMETERS: [1,12,4]
+[2021-04-01T20:41:39.980Z][QUERY]: COMMIT
+[2021-04-01T20:42:45.981Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:42:46.112Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:42:46.384Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`name` AS `Action_name`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` IN (?, ?, ?, ?) -- PARAMETERS: [1,2,3,4]
+[2021-04-01T20:42:46.511Z][QUERY]: START TRANSACTION
+[2021-04-01T20:42:46.634Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [1,"CREATE"]
+[2021-04-01T20:42:46.753Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [1]
+[2021-04-01T20:42:46.874Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [2,"READ"]
+[2021-04-01T20:42:46.996Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [2]
+[2021-04-01T20:42:47.113Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [3,"UPDATE"]
+[2021-04-01T20:42:47.229Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [3]
+[2021-04-01T20:42:47.351Z][QUERY]: INSERT INTO `action`(`id`, `name`, `createdAt`, `updatedAt`) VALUES (?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [4,"DELETE"]
+[2021-04-01T20:42:47.466Z][QUERY]: SELECT `Action`.`id` AS `Action_id`, `Action`.`createdAt` AS `Action_createdAt`, `Action`.`updatedAt` AS `Action_updatedAt` FROM `action` `Action` WHERE `Action`.`id` = ? -- PARAMETERS: [4]
+[2021-04-01T20:42:47.600Z][QUERY]: COMMIT
+[2021-04-01T20:43:14.727Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:43:14.847Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:43:15.061Z][QUERY]: SELECT `Route`.`id` AS `Route_id`, `Route`.`isActive` AS `Route_isActive`, `Route`.`name` AS `Route_name`, `Route`.`fatherID` AS `Route_fatherID`, `Route`.`level` AS `Route_level`, `Route`.`url` AS `Route_url`, `Route`.`icon` AS `Route_icon`, `Route`.`createdAt` AS `Route_createdAt`, `Route`.`updatedAt` AS `Route_updatedAt` FROM `route` `Route` WHERE `Route`.`id` IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) -- PARAMETERS: [1,2,3,4,5,6,7,8,9,10,11,12]
+[2021-04-01T20:43:15.192Z][QUERY]: START TRANSACTION
+[2021-04-01T20:43:15.304Z][QUERY]: INSERT INTO `route`(`id`, `isActive`, `name`, `fatherID`, `level`, `url`, `icon`, `createdAt`, `updatedAt`) VALUES (?, ?, ?, ?, ?, ?, ?, DEFAULT, DEFAULT) -- PARAMETERS: [12,1,"Base de Datos",10,2,"/database","mdi-database"]
+[2021-04-01T20:43:15.417Z][QUERY]: SELECT `Route`.`id` AS `Route_id`, `Route`.`createdAt` AS `Route_createdAt`, `Route`.`updatedAt` AS `Route_updatedAt` FROM `route` `Route` WHERE `Route`.`id` = ? -- PARAMETERS: [12]
+[2021-04-01T20:43:15.546Z][QUERY]: UPDATE `route` SET `level` = ? WHERE `id` IN (?) -- PARAMETERS: [1,11]
+[2021-04-01T20:43:15.656Z][QUERY]: COMMIT
+[2021-04-01T20:43:35.464Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T20:43:35.582Z][QUERY]: SELECT * FROM `agiconsu_elecciones`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T20:43:35.862Z][QUERY]: SELECT `RouteAction`.`id` AS `RouteAction_id`, `RouteAction`.`routeId` AS `RouteAction_routeId`, `RouteAction`.`actionId` AS `RouteAction_actionId` FROM `route_action` `RouteAction` WHERE `RouteAction`.`id` IN (?) -- PARAMETERS: [1]
+[2021-04-01T20:43:35.987Z][QUERY]: START TRANSACTION
+[2021-04-01T20:43:36.114Z][QUERY]: INSERT INTO `route_action`(`id`, `routeId`, `actionId`) VALUES (?, ?, ?) -- PARAMETERS: [1,12,4]
+[2021-04-01T20:43:36.247Z][QUERY]: COMMIT
+[2021-04-01T21:09:54.605Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'agiconsu_elecciones_dev' AND `TABLE_NAME` = 'migrations_typeorm'
+[2021-04-01T21:09:54.730Z][QUERY]: SELECT * FROM `agiconsu_elecciones_dev`.`migrations_typeorm` `migrations_typeorm`  ORDER BY `id` DESC
+[2021-04-01T21:09:54.996Z][QUERY]: SELECT `RouteAction`.`id` AS `RouteAction_id`, `RouteAction`.`routeId` AS `RouteAction_routeId`, `RouteAction`.`actionId` AS `RouteAction_actionId` FROM `route_action` `RouteAction` WHERE `RouteAction`.`id` IN (?) -- PARAMETERS: [1]

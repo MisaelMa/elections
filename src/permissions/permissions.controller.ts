@@ -1,9 +1,10 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { Crud, CrudController } from '@nestjsx/crud';
 import { Permission } from './entities/permission.entity';
 import { PermissionsService } from './permissions.service';
 import { PermissionDto } from './DTO/permission.dto';
-
+import { JwtGuard } from '../auth/guards/jwt.guard';
+@UseGuards(JwtGuard)
 @Crud({
     model: {
         type: Permission,
@@ -12,6 +13,7 @@ import { PermissionDto } from './DTO/permission.dto';
         join: {
             role: {},
             route: {},
+            actions: {}
         },
     },
 })

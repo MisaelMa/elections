@@ -2,17 +2,12 @@ import { Factory, Seeder } from 'typeorm-seeding';
 import { Connection } from 'typeorm';
 import { Action } from '../entities/action.entity';
 import actions from './actions.catalogue';
+import { Route } from '../../routes/entities/route.entity';
+import routes from '../../routes/seeds/route.catalogue';
 
 export default class ActionInsertUpdateSeed implements Seeder {
     public async run(factory: Factory, connection: Connection): Promise<any> {
-        await connection
-            .createQueryBuilder()
-            .insert()
-            .into(Action)
-            .values([...actions])
-            .orUpdate({ conflict_target: ['id'], overwrite: ['name', 'description', 'icon', 'isDefault'] })
-            .orIgnore()// para ignorar valores duplicado
-            .execute();
+        await connection.getRepository(Action).save(actions);
     }
 }
 

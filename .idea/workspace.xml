@@ -3,10 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="60d1a084-ed23-48ae-ba63-09159542fbf9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roles/roles.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/roles.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ormlogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/ormlogs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accesstokens/accesstokens.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/accesstokens/accesstokens.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/actions.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actions.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/seeds/action.insert.update.seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/seeds/action.insert.update.seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/country/country.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/country/country.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/agendadb.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/agendadb.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/election/election.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/election/election.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/permissions/permissions.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/permissions/permissions.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/roles.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/roles.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route-action/seeds/route-action.catalogue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/route-action/seeds/route-action.catalogue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route-action/seeds/route-action.insert.update.seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/route-action/seeds/route-action.insert.update.seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/seeds/route.catalogue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/seeds/route.catalogue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/typelection/typelection.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/typelection/typelection.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/database" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,11 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misael\Documents\misproyectos\elections\src\database" />
       <recent name="C:\Users\amir\Documents\myworks\elections\src\routes" />
       <recent name="C:\Users\amir\Documents\myworks\elections\src\actions" />
       <recent name="C:\Users\amir\Documents\myworks\elections\src" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/auth/odt" />
@@ -146,6 +158,7 @@
       <workItem from="1616591869517" duration="546000" />
       <workItem from="1616626239687" duration="4817000" />
       <workItem from="1616713363817" duration="2250000" />
+      <workItem from="1617308663897" duration="9012000" />
     </task>
     <servers />
   </component>

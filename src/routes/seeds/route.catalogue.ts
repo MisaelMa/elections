@@ -97,9 +97,18 @@ const routes: Route[] = [
     isActive: 1,
     name: 'Roles',
     fatherID: 10,
-    level: 11,
+    level: 1,
     url: '/roles',
     icon: 'mdi-axis-arrow-lock',
+  },
+  {
+    id: 12,
+    isActive: 1,
+    name: 'Base de Datos',
+    fatherID: 10,
+    level: 2,
+    url: '/database',
+    icon: 'mdi-database',
   },
 ] as Route[];
 export default routes;
